@@ -1,0 +1,7 @@
+@inproceedings{im2textNIPS2011,
+  title={Im2text: Describing images using 1 million captioned photographs},
+  author={Ordonez, Vicente and Kulkarni, Girish and Berg, Tamara L},
+  booktitle={Advances in Neural Information Processing Systems},
+  pages={1143--1151},
+  year={2011}
+}

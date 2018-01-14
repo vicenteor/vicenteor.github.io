@@ -1,0 +1,7 @@
+@inproceedings{referitgameEMNLP2014,
+  title={Referitgame: Referring to objects in photographs of natural scenes},
+  author={Kazemzadeh, Sahar and Ordonez, Vicente and Matten, Mark and Berg, Tamara L},
+  booktitle={Proceedings of the 2014 Conference on Empirical Methods in Natural Language Processing (EMNLP)},
+  pages={787--798},
+  year={2014}
+}

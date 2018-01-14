@@ -1,0 +1,9 @@
+@INPROCEEDINGS{aestheticscvpr2011, 
+author={Dhar, Sagnik and Ordonez, Vicente and Berg, Tamara L.}, 
+booktitle={Computer Vision and Pattern Recognition (CVPR), 2011 IEEE Conference on}, 
+title={High level describable attributes for predicting aesthetics and interestingness}, 
+year={2011}, 
+pages={1657-1664}, 
+doi={10.1109/CVPR.2011.5995467}, 
+ISSN={1063-6919}, 
+month={June},}

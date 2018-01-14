@@ -1,0 +1,9 @@
+@article{treetalkTACL2014,
+  title={Treetalk: Composition and compression of trees for image descriptions},
+  author={Kuznetsova, Polina and Ordonez, Vicente and Berg, Tamara L and Choi, Yejin},
+  journal={Transactions of the Association for Computational Linguistics},
+  volume={2},
+  number={10},
+  pages={351--362},
+  year={2014}
+}

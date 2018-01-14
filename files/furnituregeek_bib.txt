@@ -1,0 +1,9 @@
+@inproceedings{furnituregeekWACV2014,
+  title={Furniture-geek: Understanding fine-grained furniture attributes from freely associated text and tags},
+  author={Ordonez, Vicente and Jagadeesh, Vignesh and Di, Wei and Bhardwaj, Arpit and Piramuthu, Robinson},
+  booktitle={Applications of Computer Vision (WACV), 2014 IEEE Winter Conference on},
+  pages={317--324},
+  year={2014},
+  organization={IEEE}
+}
+

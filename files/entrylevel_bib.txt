@@ -1,0 +1,8 @@
+@inproceedings{entrylevelICCV2013,
+  title={From large scale image categorization to entry-level categories},
+  author={Ordonez, Vicente and Deng, Jia and Choi, Yejin and Berg, Alexander C and Berg, Tamara},
+  booktitle={Computer Vision (ICCV), 2013 IEEE International Conference on},
+  pages={2768--2775},
+  year={2013},
+  organization={IEEE}
+}

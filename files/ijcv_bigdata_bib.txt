@@ -1,0 +1,13 @@
+@article{bigdataIJCV2015
+year={2015},
+issn={0920-5691},
+journal={International Journal of Computer Vision},
+doi={10.1007/s11263-015-0840-y},
+title={Large Scale Retrieval and Generation of Image Descriptions},
+url={http://dx.doi.org/10.1007/s11263-015-0840-y},
+publisher={Springer US},
+keywords={Retrieval; Image description; Data driven; Big data; Natural language processing},
+author={Ordonez, Vicente and Han, Xufeng and Kuznetsova, Polina and Kulkarni, Girish and Mitchell, Margaret and Yamaguchi, Kota and Stratos, Karl and Goyal, Amit and Dodge, Jesse and Mensch, Alyssa and Daume, Hal, III and Berg, Alexander C. and Choi, Yejin and Berg, Tamara L.},
+pages={1-14},
+language={English}
+}

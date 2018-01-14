@@ -1,0 +1,13 @@
+@article{entrylevelIJCV2015,
+year={2015},
+issn={0920-5691},
+journal={International Journal of Computer Vision},
+doi={10.1007/s11263-015-0815-z},
+title={Predicting Entry-Level Categories},
+url={http://dx.doi.org/10.1007/s11263-015-0815-z},
+publisher={Springer US},
+keywords={Recognition; Categorization; Entry-level categories; Psychology},
+author={Ordonez, Vicente and Liu, Wei and Deng, Jia and Choi, Yejin and Berg, Alexander C. and Berg, Tamara L.},
+pages={1-15},
+language={English}
+}

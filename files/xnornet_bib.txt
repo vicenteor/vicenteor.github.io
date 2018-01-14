@@ -1,0 +1,6 @@
+@article{rastegari2016xnor,
+  title={XNOR-Net: ImageNet Classification Using Binary Convolutional Neural Networks},
+  author={Rastegari, Mohammad and Ordonez, Vicente and Redmon, Joseph and Farhadi, Ali},
+  journal={European Conference on Computer Vision (ECCV)},
+  year={2016}
+}

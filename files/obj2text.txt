@@ -1,0 +1,6 @@
+@inproceedings{obj2textEMNLP2017,
+  title={Obj2Text: Generating Visually Descriptive Language from Object Layouts },
+  author={Yin, Xuwang and Ordonez, Vicente},
+  booktitle={Conference on Empirical Methods in Natural Language Processing (EMNLP)},
+  year={2017}
+}

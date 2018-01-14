@@ -1,0 +1,7 @@
+@phdthesis{vicentethesis,
+  title = {Language and Perceptual Categorization in Computational Visual Recognition.},
+  author = {Vicente Ordonez},
+  school = {The University of North Carolina at Chapel Hill},
+  year = {2015},
+  month={May}
+} 

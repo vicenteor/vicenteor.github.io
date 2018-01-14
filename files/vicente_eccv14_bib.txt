@@ -1,0 +1,8 @@
+@incollection{urbanECCV2014,
+  title={Learning high-level judgments of urban perception},
+  author={Ordonez, Vicente and Berg, Tamara L},
+  booktitle={Computer Vision--ECCV 2014},
+  pages={494--510},
+  year={2014},
+  publisher={Springer}
+}

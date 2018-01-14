@@ -1,0 +1,6 @@
+@inproceedings{biasemnlp,
+  title={Men Also Like Shopping: Reducing Gender Bias Amplification using Corpus-level Constraints},
+  author={Zhao, Jieyu and Wang, Tianlu and Yatskar, Mark and Ordonez, Vicente and Chang, Kai-Wei},
+  booktitle={Conference on Empirical Methods in Natural Language Processing (EMNLP)},
+  year={2017}
+}
