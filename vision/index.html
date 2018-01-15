@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--meta name="viewport" content="width=device-width, initial-scale=1"-->
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Introduction to Computer Vision</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="js/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/jumbotron-narrow.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div style="float:right;width:32%;margin:5px;"><a href="https://infinitecreations.deviantart.com/art/BioMech-Eye-168367549"><img src="comp_vision_teaser_by_kirkh.jpg" width="284"/></a></div>
+      <div class="header clearfix">
+        <!--nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation" class="active"><a href="#">Home</a></li>
+            <li role="presentation"><a href="#">About</a></li>
+            <li role="presentation"><a href="#">Contact</a></li>
+          </ul>
+        </nav-->
+        <h3>CS 4501-008: Introduction to Computer Vision</h3>
+        <h4>Instructor: <a href="http://vicenteordonez.com">Vicente Ordonez</a> <span style="font-size:0.8em">(vicente at virginia.edu)</span></h4>
+        <h5>Class Time: Monday &amp; Wednesday between 2:00PM and 3:15PM, at Thornton Hall E316.</h5>
+        <h5>Instructor's Office Hour: TBD </h5>
+        <h5>TA: Fengyang Zhang (fz2ds at virginia.edu) -- TA Office Hours: TBD </h5>
+        <h5>TA: Gautam Somappa (gs9ed at virginia.edu) -- TA Office Hours: TBD </h5>
+        <h5>TA: Siva Sitaraman (ks6cq at virginia.edu) -- TA Office Hours: TBD </h5>
+        <h5>Discussion Forum: <a href="http://piazza.com/virginia/spring2018/cs4501008/home">http://piazza.com/virginia/spring2018/cs4501008/home</a></h5>
+      </div>
+
+        <!--div class="jumbotron">
+        <h1>Jumbotron heading</h1>
+        <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        <p><a class="btn btn-lg btn-success" href="#" role="button">Sign up today</a></p>
+      </div-->
+
+
+       <div class="section">
+        <p><strong>Course Description: </strong>Computer Vision is about empowering computers to visually explore and reason about the world. In this course we will study how images are represented in a computer, how to manipulate them, and how to extract information (features) from images for various applications including image matching, reconstruction, and recognition. We will particulary study basic techniques to recover geometry from images, camera calibration, automatic image alignment, boundary detection, object recognition, image classification, and image retrieval/search. We will develop the intuitions, study the mathematical methods, and learn to use these in practical computer vision systems. </p>
+        <p>
+        <strong>Prerrequisites: </strong>This course requires no specific previous background.
+        You need to know about matrices, calculating derivatives, and probabilities (bayes rule). You will also need to be at least a moderately proficient programmer in python. There will be several small project assignments. These projects will show you the basics of modern computer vision algorithms, and will give you the tools for implementing more advanced ones. There will also be two quizzes. Being proficient in Python by completing a few projects in this language before the class starts is helpful. You should install python and jupyter.
+
+        </p>
+        <strong>Grading: </strong> Projects: 80% (5 programming projects: 15% + 15% + 15% + 15% + 20%), Quizzes: 20% (2 written quizzes: 10% + 10%).
+        <br/>
+        <strong>Late Submission Policy: </strong> You will lose 10% for each day late for the programming projects. This means the first 24 hours after the due date count as 1 day, up to 48 hours is two and 72 for the third late day. However, you will have three late days for the whole course to address any unexpected traveling, other commitments, interviews, hackathons, etc. These three late day grace period will be accounted at the end of the semester. Please do not send the professor or the TAs emails about submitting late assignments. You can always submit late assignments, and you have a grace period of 3 days for the semester. If you don't use more than three late days, you will not be penalized in any way (but this will be accounted at the end of the semester).
+       </div>
+       <div>
+
+       <div class="section">
+        <h4>Syllabus</h4>
+
+        <table class="table">
+          <tr>
+            <td>Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td>Topic</td><td></td>
+          </tr>
+
+          <tr>
+            <td style="width:200px">Wed, January 17th</td>
+            <td style="width:600px">Introduction to Computer Vision
+            </td>
+            <td></td>
+          </tr>
+
+          <tr>
+            <td>Mon, January 22th</td>
+            <td>Cameras and Image Formation
+            </td><td></td>
+          </tr>
+
+          <tr>
+            <td>Wed, January 24th</td>
+            <td>Light and Color &amp; Image Filtering
+            </td><td></td>
+          </tr>
+
+          <tr>
+            <td>Mon, January 29th</td>
+            <td>Image Filtering and the Frequency Domain
+            </td><td>
+          </tr>
+
+          <tr>
+          <td>Wed, January 31st </td>
+              <td>Edge Detection
+              </td><td class="lecturex">
+                <!--Project 1 Due: Image Filtering-->
+              </td></td>
+          </tr>
+
+          <tr>
+            <td>Mon, February 5th</td>
+             <td>Local Feature Descriptors
+            </td><td></td>
+          </tr>
+
+           <tr>
+            <td>Wed, February 7th</td>
+            <td>Hough Transform and RANSAC
+            </td><td></td>
+          </tr>
+
+          <tr>
+            <td>Mon, February 12th</td>
+            <td>Stereo Vision</td>
+            <td></td>
+            
+          </tr>
+           <!--tr class="warning"><td class="text-center" colspan="4">Meet with the instructor this week to define your Final Project Proposal<br/> (Monday 26th office hours will be from 2pm to 5pm for this purpose)</td></tr-->
+           <tr>
+            <td>Wed, February 14th</td>
+            <td>Camera Calibration
+            </td><td class="lecturex">
+              <!--Project 2 Due: Feature Matching.-->
+            </td>
+            
+          </tr>
+
+          <tr>
+            <td>Mon, February 19th</td>
+            <td>Epipolar Geometry and Structure from Motion
+            </td><td></td>
+           
+          </tr>
+
+          <tr>
+            <td>Wed, February 21st</td>
+              <td>Stereo Correspondence
+            </td><td></td>
+          </tr>
+
+           <tr>
+            <td>Mon, February 26th</td>
+            <td> Optical Flow
+            </td>
+            <td>
+            </td>
+          </tr>
+
+           <tr>
+            <td>Wed, February 28th</td>
+            <td> Panorama Stitching &amp; Seam Carving
+            </td> <td class="lecturex">
+              <!--Project 3 Due: Dense Stereo-->
+            </td>
+          </tr>
+          <!--tr class="warning"><td class="text-center" colspan="4">Submit a 1 or 2 page project proposal in PDF on UVA Collab (Deadline: Thursday October 5th at 5pm).</td></tr-->
+
+           <tr class="noclass">
+            <td>Mon, March 5th</td>
+            <td> No class this day / Spring Break
+            <td>
+            </td>
+          </tr>
+ 
+           <tr class="noclass">
+            <td>Wed, March 7th</td>
+            <td> No class this day / Spring Break
+            </td>
+            <td>
+            </td>
+            
+          </tr>
+           <tr>
+            <td>Mon, March 12th</td>
+            <td>Introduction to Machine Learning 
+            </td><td>
+            </td>
+            
+          </tr>
+
+          <tr>
+            <td>Wed, March 14th</td>
+            <td><span style="color:#00f">Quiz  1</span>
+            </td><td></td>
+          </tr>
+
+          <tr>
+            <td>Mon, March 19th</td>
+            <td>Scene Classification &amp; Global Feature Descriptors
+            </td><td></td>
+            
+          </tr>
+          <!--tr class="warning"><td class="text-center" colspan="4">Submit a 3-page progress report of your Project<br/> (Monday October 31st)</td></tr-->
+            <tr>
+            <td>Wed, March 21st</td>
+            <td>Bag of Visual Features &amp; Image Retrieval
+            </td><td></td>
+          </tr>
+          
+          <tr>
+            <td>Mon, March 26th</td>
+              <td>Detection with Sliding Windows: Viola-Jones</td>
+             <td class="lecturex">
+              <!--Project 4 Due: Scene Recognition-->
+            </td>
+          </tr>
+
+           <tr>
+             <td>Wed, March 28th</td>
+             <td>Detection with Sliding Windows: Dalal-Triggs
+            </td>
+            <td></td> 
+          </tr>
+
+          <tr>
+            <td>Mon, April 2nd</td>
+            <td> Neural Network Basics
+            </td><td></td>
+            
+          </tr>
+          
+          <tr>
+            <td>Wed, April 4th</td>
+            <td>Convolutional (Neural) Networks (CNNs)
+            </td><td></td>
+          </tr>
+
+          <tr>
+            <td>Mon, April 9th</td>
+            <td> Image Classification using CNNs.
+           </td>
+            <td>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Wed, April 11th</td>
+            <td>Deeper Neural Network Architectures I
+            </td><td></td>
+          </tr>
+           
+          <tr>
+            <td>Mon, April 16th</td>
+            <td>Deeper Neural Network Architectures II
+            </td><td></td>
+          </tr>
+
+          <tr>
+            <td>Wed, April 18th</td>
+            <td> Deep Learning for Object Detection
+            </td> <td class="lecturex">
+              <!--Project 5 Due: Deep Scene Classification.-->
+            </td>
+          </tr>
+
+          <tr>
+            <td>Mon, April 23th</td>
+            <td>  Deep Learning for Image Segmentation
+            </td><td></td>
+          </tr>
+
+           <tr>
+            <td>Wed, April 25th</td>
+            <td>
+                Unsupervised Deep Learning
+            </td><td></td>
+          </tr>
+
+          <tr>
+            <td>Mon, April 30th</td>
+            <td><span style="color:#00f">  Quiz 2 </span>
+            </td><td></td>
+          </tr>
+
+          <tr class="noclass">
+            <td>Wed, May 2nd</td>
+            <td> No class this day / Reading Day
+            </td><td></td>
+          </tr>
+
+        </table>
+       </div>
+
+<div>
+<p>
+<b>Disclaimer: </b>
+The professor reserves to right to make changes to the syllabus, including project due dates and test dates. These changes will be announced as early as possible.</p>
+</div>
+
+  <div class="section">
+  <h4>Academic Integrity</h4>
+  <p>
+  "The School of Engineering and Applied Science relies upon and cherishes its community of trust. We firmly endorse, uphold, and embrace the University’s Honor principle that students will not lie, cheat, or steal, nor shall they tolerate those who do. We recognize that even one honor infraction can destroy an exemplary reputation that has taken years to build. Acting in a manner consistent with the principles of honor will benefit every member of the community both while enrolled in the Engineering School and in the future. Students are expected to be familiar with the <a href="http://honor.virginia.edu/academic-fraud">university honor code</a>, including the section on academic fraud."</p>
+
+  </div>
+
+  <div class="section">
+        <h4>Other similar courses that might be of interest and from which I borrowed a lot of material:</h4>
+        <ul>
+          <li><a href="http://www3.cs.stonybrook.edu/~cse327/">Introduction to Computer Vision</a> (Dimitris Samaras, Stony Brook University)</li>
+          <li><a href="https://www.cc.gatech.edu/~hays/compvision/">Computer Vision</a> (James Hays, Georgia Institute of Technology)</li>
+          <li><a href="http://slazebni.cs.illinois.edu/spring16/">Computer Vision</a> (Svetlana Lazebnik, University of Illinois at Urbana Champaign)</li>
+          <li><a href="http://vision.stanford.edu/teaching/cs131_fall1718/">Computer Vision: Foundations and Applications</a> (Juan Carlos Niebles and Ranjay Krishna, Stanford University)</li>
+          <li><a href="http://frahm.web.unc.edu/homepage-jan-michael-frahm/sample-page/">Computer Vision</a> (Jan-Michael Frahm, University of North Carolina at Chapel Hill)</li>
+        </ul>
+  </div>
+      <footer class="footer">
+        <p>Department of Computer Science, University of Virginia, Spring 2018. </p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    <!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=11059646; 
+var sc_invisible=1; 
+var sc_security="89297146"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="web analytics"
+href="http://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="//c.statcounter.com/11059646/0/89297146/1/" alt="web
+analytics"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+  </body>
+</html>
