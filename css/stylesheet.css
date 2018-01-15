@@ -38,7 +38,7 @@ body {
  color: #000;
  font-weight: 400;
  text-align: center;
- font-size:0.84em;
+ font-size:1.32em;
  font-family:"OpenSans",Helvetica ,Arial,sans-serif;
 }
 
@@ -159,7 +159,7 @@ margin-right:20px;
 /*margin: 0px 12px 12px 0px;*/
 }
 
-.badge{
+.x-badge{
 	/*padding-left: 200px;*/
     margin-bottom: 20px;
     padding-right: 40px;
