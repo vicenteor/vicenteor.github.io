@@ -36,6 +36,15 @@ body {
 	font-family: 'Open Sans', sans-serif;
 }
 
+strong{
+	font-weight:bold;
+}
+
+.pub_item strong{
+	font-weight: 600;
+	color: #222;
+}
+
 .shadow {
 	-moz-box-shadow: 0px 2px 8px #aaa;
 	-webkit-box-shadow: 0px 2px 8px #aaa;
