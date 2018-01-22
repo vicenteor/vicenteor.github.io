@@ -1,0 +1,16 @@
+@article{feedbackprop,
+  author    = {Tianlu Wang and
+               Kota Yamaguchi and
+               Vicente Ordonez},
+  title     = {Feedback-prop: Convolutional Neural Network Inference under Partial
+               Evidence},
+  journal   = {CoRR},
+  volume    = {abs/1710.08049},
+  year      = {2017},
+  url       = {http://arxiv.org/abs/1710.08049},
+  archivePrefix = {arXiv},
+  eprint    = {1710.08049},
+  timestamp = {Thu, 02 Nov 2017 14:25:36 +0100},
+  biburl    = {http://dblp.org/rec/bib/journals/corr/abs-1710-08049},
+  bibsource = {dblp computer science bibliography, http://dblp.org}
+}
