@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <!--meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"-->
+    <title>Learning High-level Judgments of Urban Perception (ECCV 2014)</title>
+
+    <!-- CSS includes -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,400,900' rel='stylesheet' type='text/css'>
+    <link href="mstyle.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <div id="header" class="container-fluid">
+      <div class="row">
+        <h1>Learning High-level Judgments of Urban Perception</h1>
+        <div class="authors">
+          <a href="http://www.cs.unc.edu/~vicente">Vicente Ordonez</a>, 
+          <a href="http://tamaraberg.com">Tamara Berg</a>
+	  <br/>
+	  University of North Carolina at Chapel Hill<br><br>
+	</div>
+	<div class="container" style="text-align:center">
+	  <div style="width:100%"><img src="leadfigure.jpg"></div>
+	  <span style="font-size:0.8em">From isolated urban predictions to dense collective predictions to figure out data-driven boundaries.</span>
+        </div>
+      </div>
+    </div>
+    <div class="container" id="abstractdiv">
+      <h2>Abstract</h2>
+    Human observers make a variety of perceptual inferences
+about pictures of places based on prior knowledge and experience. In
+this paper we apply computational vision techniques to the task of pre-
+dicting the perceptual characteristics of places by leveraging recent work
+on visual features along with a geo-tagged dataset of images associated
+with crowd-sourced urban perception judgments for wealth, uniqueness,
+and safety. We perform extensive evaluations of our models, training and
+testing on images of the same city as well as training and testing on im-
+ages of different cities to demonstrate generalizability. In addition, we
+collect a new densely sampled dataset of streetview images for 4 cities
+and explore joint models to collectively predict perceptual judgments
+at city scale. Finally, we show that our predictions correlate well with
+ground truth statistics of wealth and crime.  
+    </div>
+
+    <div class="container" id="paperdiv">
+    <h2>Paper</h2>
+    Vicente Ordonez, Tamara L. Berg. &nbsp;<a href="vicente_eccv14.pdf">Learning High-level Judgments of Urban Perception.</a> <br/><em>European Conference on Computer Vision (ECCV) 2014</em>. &nbsp;Zurich, Switzerland. &nbsp;September 2014.
+<br/>
+[<a href="vicente_eccv14.pdf">PDF</a>][<a href="vicente_eccv14_poster_last.pdf">poster</a>]
+<br/><br/>
+ <div>
+        <pre class="citation">@inproceedings{OrdonezBergECCV14,
+  title     = {Learning High-level Judgments of Urban Perception},
+  author    = {Vicente Ordonez and Tamara L. Berg},
+  year      = {2014},
+  booktitle = {ECCV}
+}</pre>
+      </div>
+    </div>
+
+    <div class="container">
+      <h2>Resources</h2>
+      Only utilities to download Street View Images (417 KB)[<a href="urban_release_small.tar.gz">Download</a>]<br/>
+      Code to run classification and regression experiments (337 MB)[<a href="urban_release.tar.gz">Download</a>]<br/>
+      Code including additional experiment on collective prediction [~soon]
+     </div>
+
+    <div id="footer">
+    </div>
+
+    <!-- Javascript includes -->
+    <script src="jquery-1.8.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
