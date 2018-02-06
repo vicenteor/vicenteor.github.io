@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0043)http://graphics.cs.cmu.edu/projects/im2gps/ -->
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>From Large Scale Image Categorization to Entry-Level Categories</title>
+<link media="all" href="glab.css" type="text/css" rel="StyleSheet">
+</head>
+
+<body>
+
+<div id="wrapper">
+<center><h1>From Large Scale Image Categorization to Entry-Level Categories</h1>
+<h3><a href="http://vicenteordonez.com">Vicente Ordonez</a>, Jia Deng, Yejin Choi, Alexander C. Berg, <a href="http://tamaraberg.com">Tamara L. Berg</a></h3>
+<h4><a href="http://www.unc.edu">University of North Carolina at Chapel Hill</a>, <a href="http://www.stanford.edu">Stanford University</a>, <a href="http://www.stonybrook.edu">Stony Brook University</a></h4>
+<img src="dolphin.jpg"></center>
+
+<h2>Abstract</h2>
+
+<p>
+Entry level categories - the labels people will use to
+name an object - were originally defined and studied by
+psychologists in the 1980s. In this paper we study entrylevel
+categories at a large scale and learn the first models
+for predicting entry-level categories for images. Our
+models combine visual recognition predictions with proxies
+for word "naturalness" mined from the enormous amounts
+of text on the web. We demonstrate the usefulness of our
+models for predicting nouns (entry-level words) associated
+with images by people. We also learn mappings between
+concepts predicted by existing visual recognition systems
+and entry-level concepts that could be useful for improving
+human-focused applications such as natural language
+image description or retrieval.
+</p>
+
+<h2>Paper</h2>
+<p>Vicente Ordonez, Jia Deng, Yejin Choi, Alexander C. Berg, Tamara L. Berg. From Large Scale Image Categorization to Entry-Level Categories.
+IEEE International Conference on Computer Vision (ICCV), 2013. 
+[<a href="http://www.cs.unc.edu/~vicente/files/entrylevel.pdf">Paper (PDF)</a>]
+[<a href="entrylevel_bib.txt">Bibtex</a>]
+[<a href="iccv2013_slides.pptx">Slides</a>]
+</p>
+
+<h2>Resources</h2>
+Ground-truth entry-level categories for 447 imagenet categories: [<a href="data/translation-text-based-iccv2013.html">click here</a>]<br/>
+Text-based entry-level translations for 7404 imagenet categories: [<a href="data/translation-text-based-iccv2013-all.html">click here</a>]<br/>
+Results for predicting entry-level categories for 1000 images: [<a href="data/hedging_plus_v2/hedging_naturalness_rand_test_SORTEDOUT.html">Dataset A</a>][<a href="data/hedging_plus_v2/hedging_naturalness_sorted_test_SORTEDOUT.html">Dataset B</a>]
+<!--a href="SBUCaptionedPhotoDataset.tar.gz">Data</a>, containing 1 million image urls + captions and a script to crawl images (43MB). <br>
+<a href="Im2TextBaseline.tar">Matlab Code</a> for computing our baseline method, including precomputed Gist + Tinyimage features (4.4GB).<br>
+<a href="http://vision.cs.stonybrook.edu/~vicente/python_server_files/py/website/search.py">Search tool:</a> Search for images using text queries (e.g. <a href="http://vision.cs.stonybrook.edu/~vicente/python_server_files/py/website/search.py?query=cat+under+a+tree">"cat under a tree"</a>, <a href="http://vision.cs.stonybrook.edu/~vicente/python_server_files/py/website/search.py?query=dog+walking+on+the+beach">"dog walking on the beach"</a>)<br>
+<!--a href="Im2TextBaseline.tar">Code</a> for computing our baseline method, including precomputed Gist + Tinyimage features [Matlab] (4.4GB).<br-->
+<!--pre class="source-code">
+<code><span style="color:#080">% Sample usage.</span>
+[captions] = im2text('myimage.jpg');
+<span style="color:#080">% Variable captions is a cell array of candidate image descriptions.</span>
+</code></pre-->
+<div id="footer">
+</div>
+
+<!-- start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=7863707; 
+var sc_invisible=1; 
+var sc_security="4f365b7e"; 
+</script>
+<script type="text/javascript"
+src="http://www.statcounter.com/counter/counter.js"></script>
+<noscript><div class="statcounter"></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-47451133-1', 'unc.edu');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

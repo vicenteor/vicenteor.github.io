@@ -1,0 +1,62 @@
+#wrapper {
+	margin: auto; 
+    text-align: left; 
+    width:800px; 
+    margin-top:20px;
+    margin-bottom:40px;
+}
+
+body {
+	text-align: center
+}
+
+pre.source-code {
+  font-family: Andale Mono, Lucida Console, Monaco, fixed, monospace; 
+  color: #000000;
+  background-color: #eee;
+  font-size: 12px;
+  border: 1px dashed #999999;
+  line-height: 14px;
+  padding: 5px;
+  overflow: auto;
+  width: 100%
+}
+
+h1 {
+    margin:0;
+    padding:0;
+    font-weight:normal;
+    font-size: 1.7em;
+}
+
+h2 {
+    font-weight: normal;
+    margin-bottom:0px;
+}
+
+h3{
+    font-weight:normal;
+    margin-top:5px;
+    margin-bottom:0px;
+}
+
+h4 {
+    font-weight: normal;
+    margin-top:5px;
+    margin-bottom:15px;
+}
+
+a{
+    text-decoration:none;
+   /* color:#000095;*/
+}
+
+a:visited{
+    text-decoration:none;
+/*    color:#000075;*/
+}
+
+body {
+    font-size:small;
+    font-family: Georgia, "New Century Schoolbook", Times, serif;
+}

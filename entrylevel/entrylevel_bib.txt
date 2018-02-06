@@ -1,0 +1,6 @@
+@inproceedings{Ordonez:2013:entrylevel,
+  Author    = {Vicente Ordonez and Jia Deng and Yejin Choi and Alexander C. Berg and Tamara L. Berg},
+  Title     = {From Large Scale Image Categorization to Entry-Level Categories},
+  Booktitle = {IEEE International Conference on Computer Vision ({ICCV})},
+  Year      = {2013},
+}
