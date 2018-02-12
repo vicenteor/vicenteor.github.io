@@ -57,18 +57,10 @@
 
        <div class="section" style="margin-top:-10px">
         <p><strong>Course Description: </strong>Computer Vision is about empowering computers to visually explore and reason about the world. In this course we will study how images are represented in a computer, how to manipulate them, and how to extract information (features) from images for various applications including image matching, reconstruction, and recognition. We will particulary study basic techniques to recover geometry from images, camera calibration, automatic image alignment, boundary detection, object recognition, image classification, and image retrieval/search. We will develop the intuitions, study the mathematical methods, and learn to use these in practical computer vision systems.
-        <p>
-        <p><strong>Learning Objectives: </strong> (a) Develop intuitions between Human Vision and Computer Vision, (b) Understanding the basics of 2D and 3D Computer Vision, (c) Become familiar with the technical approaches in computer vision such as registration, matching, and recognition, and (d) Obtain practical experience in the implementation of computer vision applications.
-        <p>
-        <strong>Prerrequisites: </strong>This course requires no specific previous background.
-        You need to know about matrices, calculating derivatives, and probabilities (bayes rule). You will also need to be at least a moderately proficient programmer in python. There will be several small project assignments. These projects will show you the basics of modern computer vision algorithms, and will give you the tools for implementing more advanced ones. There will also be two quizzes. Being proficient in Python by completing a few projects in this language before the class starts is helpful. You should install python and jupyter.
-
         </p>
-        <p>
-        <strong>Grading: </strong> Projects: 80% (5 programming projects: 15% + 15% + 15% + 15% + 20%), Quizzes: 20% (2 written quizzes: 10% + 10%).
-        <br/>
-        <strong>Late Submission Policy: </strong> You will lose 10% for each day late for the programming projects. This means the first 24 hours after the due date count as 1 day, up to 48 hours is two and 72 for the third late day. However, you will have three late days for the whole course to address any unexpected traveling, other commitments, interviews, hackathons, etc. These three late day grace period will be accounted at the end of the semester. Please do not send the professor or the TAs emails about submitting late assignments. You can always submit late assignments, and you have a grace period of 3 days for the semester. If you don't use more than three late days, you will not be penalized in any way (but this will be accounted at the end of the semester).
-       </p>
+        <p><strong>Learning Objectives: </strong> (a) Develop intuitions between Human Vision and Computer Vision, (b) Understanding the basics of 2D and 3D Computer Vision, (c) Become familiar with the technical approaches in computer vision such as registration, matching, and recognition, and (d) Obtain practical experience in the implementation of computer vision applications.
+        </p>
+       
        <p><strong>Textbook:</strong>
 Readings will be assigned from <a href="http://szeliski.org/Book/">"Computer Vision: Algorithms and Applications"</a> by Richard Szeliski. The book is available for free online or available for purchase.<br/>
 Also optional readings from David Forsyth &amp; Jean Ponce's <a href="https://www.amazon.com/Computer-Vision-Modern-Approach-2nd/dp/013608592X">"Computer Vision: A Modern Approach"</a> also available <a href="http://en.bookfi.net/book/1063993">here</a>.</p>
@@ -93,7 +85,7 @@ Also optional readings from David Forsyth &amp; Jean Ponce's <a href="https://ww
           <tr>
             <td>Mon, January 22th</td>
             <td>Cameras and Image Formation [<a href="http://www.cs.virginia.edu/~vicente/vision/slides/lecture02.pptx">pptx</a>] [<a href="http://www.cs.virginia.edu/~vicente/vision/slides/lecture02.pdf">pdf</a>]
-            </td><td>Szeliski Ch. 2.1, Forsyth&amp;Ponce Ch. 1</td>
+            </td><td>Szeliski Ch. 2.1, Forsyth and Ponce Ch. 1</td>
           </tr>
 
           <tr>
@@ -128,42 +120,42 @@ Also optional readings from David Forsyth &amp; Jean Ponce's <a href="https://ww
             </td><td>Szeliski 4.1.1, 4.1.2</td>
           </tr>
 
-          <tr class="assignment"><td class="text-center" colspan="4">Assignment on Local Feature Descriptors, and RANSAC <!--[<a href="#">Google Colaboratory</a>]-->. Due <strong>February 25th 5pm EST</strong>.</td></tr>
+          <tr class="assignment"><td class="text-center" colspan="4">Assignment on Corners, Interest Points, and Hough Transform [<a href="https://colab.research.google.com/drive/1DTw4LXiAQcRHJJ9FcegwotmgvNulydyl">Google Colaboratory</a>]. Due <strong>February 25th 5pm EST</strong>.</td></tr>
 
           <tr>
             <td>Mon, February 12th</td>
-            <td>Corners, Interest Points and Local Feature Descriptors (SIFT)</td>
-            <td></td>
+            <td>Corners and Interest Points [<a href="http://www.cs.virginia.edu/~vicente/vision/slides/lecture08.pptx">pptx</a>] [<a href="http://www.cs.virginia.edu/~vicente/vision/slides/lecture08.pdf">pdf</a>]</td>
+            <td>Szeliski 4.1.1, Szeliski 4.1.2</td>
             
           </tr>
            <tr>
             <td>Wed, February 14th</td>
-            <td>Hough Transform and RANSAC 
-            </td><td class="lecturex">
-              <!--Project 2 Due: Feature Matching.-->
+            <td>Local Feature Descriptors (SIFT)
+            </td><td>
+              Szeliski 4.1.2
             </td>
             
           </tr>
 
           <tr>
             <td>Mon, February 19th</td>
-            <td>Epipolar Geometry and Structure from Motion
-            </td><td></td>
+            <td>Hough Transform and RANSAC 
+            </td><td>Szeliski 6.1 and 2.1</td>
            
           </tr>
 
           <tr>
             <td>Wed, February 21st</td>
               <td>Camera Calibration
-            </td><td></td>
+            </td><td>Szeliski 6.2.1</td>
           </tr>
 
-          <!--tr class="assignment"><td class="text-center" colspan="4">Assignment on Stereo Vision, and Scene Stitching [<a href="#">Google Colaboratory</a>]. Due March 18th 5pm EST.</td></tr-->
+          <tr class="assignment"><td class="text-center" colspan="4">Assignment on Image Stitching, Epipolar Geometry, Stereo Vision <!--[<a href="#">Google Colaboratory</a>]-->. Due <strong>March 18th 5pm EST</strong>.</td></tr>
            <tr>
             <td>Mon, February 26th</td>
-            <td> Optical Flow
+            <td> Epipolar Geometry and Structure from Motion
             </td>
-            <td>
+            <td>Szeliski 7
             </td>
           </tr>
 
@@ -192,7 +184,7 @@ Also optional readings from David Forsyth &amp; Jean Ponce's <a href="https://ww
           </tr>
            <tr>
             <td>Mon, March 12th</td>
-            <td>Dense Stereo
+            <td>Dense Stereo and Optical Flow
             </td><td>
             </td>
             
@@ -310,6 +302,16 @@ The professor reserves to right to make changes to the syllabus, including proje
 </div>
 
   <div class="section">
+   <p>
+        <strong>Prerrequisites: </strong>This course requires no specific previous background.
+        You need to know about matrices, calculating derivatives, and probabilities (bayes rule). You will also need to be at least a moderately proficient programmer in python. There will be several small project assignments. These projects will show you the basics of modern computer vision algorithms, and will give you the tools for implementing more advanced ones. There will also be two quizzes. Being proficient in Python by completing a few projects in this language before the class starts is helpful. You should install python and jupyter.
+        </p>
+        <p>
+        <strong>Grading: </strong> Projects: 80% (5 programming projects: 15% + 15% + 15% + 15% + 20%), Quizzes: 20% (2 written quizzes: 10% + 10%).
+        <br/>
+        <strong>Late Submission Policy: </strong> You will lose 10% for each day late for the programming projects. This means the first 24 hours after the due date count as 1 day, up to 48 hours is two and 72 for the third late day. However, you will have three late days for the whole course to address any unexpected traveling, other commitments, interviews, hackathons, etc. These three late day grace period will be accounted at the end of the semester. Please do not send the professor or the TAs emails about submitting late assignments. You can always submit late assignments, and you have a grace period of 3 days for the semester. If you don't use more than three late days, you will not be penalized in any way (but this will be accounted at the end of the semester).
+       </p>
+
   <h4>Academic Integrity</h4>
   <p>
   "The School of Engineering and Applied Science relies upon and cherishes its community of trust. We firmly endorse, uphold, and embrace the University’s Honor principle that students will not lie, cheat, or steal, nor shall they tolerate those who do. We recognize that even one honor infraction can destroy an exemplary reputation that has taken years to build. Acting in a manner consistent with the principles of honor will benefit every member of the community both while enrolled in the Engineering School and in the future. Students are expected to be familiar with the <a href="http://honor.virginia.edu/academic-fraud">university honor code</a>, including the section on academic fraud."</p>
