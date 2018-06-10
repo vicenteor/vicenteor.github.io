@@ -1,0 +1,14 @@
+@article{Pang2018150,
+title = "Building discriminative \{CNN\} image representations for object retrieval using the replicator equation ",
+journal = "Pattern Recognition ",
+volume = "83",
+number = "",
+pages = "150 - 160",
+year = "2018",
+note = "",
+issn = "0031-3203",
+doi = "https://doi.org/10.1016/j.patcog.2018.05.010",
+url = "https://www.sciencedirect.com/science/article/pii/S0031320318301808",
+author = "Shanmin Pang and Jihua Zhu and Jiaxing Wang and Vicente Ordonez and Jianru Xue"
+}
+
