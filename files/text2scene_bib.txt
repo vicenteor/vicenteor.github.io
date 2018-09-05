@@ -1,0 +1,10 @@
+@article{text2scene,
+author = {Tan, Fuwen and Feng, Song and Ordonez, Vicente},
+title = {Text2Scene: Generating Abstract Scenes from Textual Descriptions},
+journal = {CoRR},
+archivePrefix = {arXiv},
+eprint    = {1809.01110},
+volume = {abs/1809.01110},
+year = {2018}
+url={https://arxiv.org/abs/1809.01110}
+}
