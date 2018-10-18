@@ -1,0 +1,17 @@
+@article{DBLP:journals/corr/abs-1805-08587,
+  author    = {Shanmin Pang and
+               Jin Ma and
+               Jianru Xue and
+               Jihua Zhu and
+               Vicente Ordonez},
+  title     = {Deep Feature Aggregation with Heat Diffusion for Image Retrieval},
+  journal   = {CoRR},
+  volume    = {abs/1805.08587},
+  year      = {2018},
+  url       = {http://arxiv.org/abs/1805.08587},
+  archivePrefix = {arXiv},
+  eprint    = {1805.08587},
+  timestamp = {Mon, 13 Aug 2018 16:48:52 +0200},
+  biburl    = {https://dblp.org/rec/bib/journals/corr/abs-1805-08587},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
