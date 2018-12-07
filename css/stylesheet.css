@@ -78,10 +78,10 @@ a{
  margin-left: auto;
  margin-right: auto;
  margin-top: 10px;
- width: 960px;
+ width: 1080px;
  text-align: left;
- border-left: 1px solid #d9d9d9;
- border-right: 1px solid #d9d9d9;
+ border-left: 1px solid #f1f1f1;
+ border-right: 1px solid #f1f1f1;
 }
 
 #inner-page{
@@ -206,7 +206,6 @@ margin-right:20px;
 .x-badge{
 	/*padding-left: 200px;*/
     margin-bottom: 20px;
-    padding-right: 40px;
 }
 
 #title{
