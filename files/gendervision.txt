@@ -1,0 +1,8 @@
+@misc{wang2018adversarial,
+    title={Adversarial Removal of Gender from Deep Image Representations},
+    author={Tianlu Wang and Jieyu Zhao and Mark Yatskar and Kai-Wei Chang and Vicente Ordonez},
+    year={2018},
+    eprint={1811.08489},
+    archivePrefix={arXiv},
+    primaryClass={cs.CV}
+}

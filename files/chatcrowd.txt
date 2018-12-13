@@ -1,0 +1,8 @@
+@misc{yin2018chatcrowd,
+    title={Chat-crowd: A Dialog-based Platform for Visual Layout Composition },
+    author={Xuwang Yin and Vicente Ordonez and Song Feng},
+    year={2018},
+    eprint={1812.04081},
+    archivePrefix={arXiv},
+    primaryClass={cs.CL}
+}
