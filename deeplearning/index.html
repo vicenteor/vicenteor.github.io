@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--meta name="viewport" content="width=device-width, initial-scale=1"-->
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Deep Learning for Visual Recognition</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="js/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/jumbotron-narrow.css" rel="stylesheet">
+    <style>
+      .assignment{
+        font-size:0.94em;
+        padding:0px;
+        background-color: #ffe;
+        margin:0px;
+        }
+    </style>
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div style="float:right;width:32%;margin-top:5px;"><a href="https://infinitecreations.deviantart.com/art/BioMech-Eye-168367549"><img src="comp_vision_teaser_by_kirkh.jpg" width="280"/></a></div>
+      <div class="header clearfix">
+        <!--nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation" class="active"><a href="#">Home</a></li>
+            <li role="presentation"><a href="#">About</a></li>
+            <li role="presentation"><a href="#">Contact</a></li>
+          </ul>
+        </nav-->
+        <h3>CS 6501-004: Deep Learning for Visual Recognition</h3>
+        <img style="margin:5px" src="lab_members/vicente.jpg" width="80"/><img style="margin:5px" src="lab_members/ziyan.jpg" width="80"/><img style="margin:5px" src="lab_members/tianlu.jpg" width="80"/>
+        <h5>Instructor: <a href="http://vicenteordonez.com">Vicente Ordonez</a> <span>(vicente at virginia.edu)</span></h5>
+        <h5>Teaching Assistant: <a href="#">Ziyan Yang</a> (zy3cx at virginia.edu) -- <span style="font-size:0.9em">Hours: TBD</span> </h5>
+        <h5>Teaching Assistant: <a href="http://www.cs.virginia.edu/~tw8cb">Tianlu Wang</a> (tw8cb at virginia.edu) -- <span style="font-size:0.9em">Hours: TBD</span> </h5>
+        <h5>Class Time: Monday &amp; Wednesday between 3:30PM and 4:45PM, at Thornton Hall E303.</h5>
+        <h5>Discussion Forum: <a href="#">TBD</a></h5>
+      </div>
+
+        <!--div class="jumbotron">
+        <h1>Jumbotron heading</h1>
+        <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        <p><a class="btn btn-lg btn-success" href="#" role="button">Sign up today</a></p>
+      </div-->
+
+
+       <div class="section" style="margin-top:-10px">
+        <p><strong>Course Description: </strong>How can we use computers to recognize objects, people, actions, animals, places, etc from images?
+          This seemingly trivial task that people perform without much effort has
+          remained one of the core problems in Computer Vision. Recent advances in representation learning using multiple layers of abstraction (deep learning) have demonstrated to be an important aspect for designing artificial systems for visual recognition. In this class we will study, conceive, and implement deep learning models and learning algorithms for computational visual recognition. After this class you will be able to understand, design, implement, and assess the impact of deep learning techniques for a diverse range of visual recognition tasks.
+        </p>
+        <p><strong>Learning Objectives: </strong> (a) Develop intuitions between aspects in human vision and computer vision, (b) Understanding foundational concepts for representation learning using neural networks, (c) Become familiar with state-of-the-art models for tasks such as image classification, object detection, image segmentation, scene recognition, etc, and (d) Obtain practical experience in the implementation of visual recognition models using deep learning.
+        </p>
+       
+       <!--p><strong>Textbook:</strong> We will not use a textbook for the class. But good books in the topics of computer vision and machine learning would be: <a href="http://szeliski.org/Book/">Computer Vision: Algorithms and Applications</a> by Richard Szeliski, <a href="https://www.amazon.com/Computer-Vision-Modern-Approach-2nd/dp/013608592X">Computer Vision: A Modern Approach</a> by David Forsyth &amp; Jean Ponce, and <a href="https://www.deeplearningbook.org/">Deep Learning</a> by Ian Goodfellow, Yoshua Bengio, and Aaron Courville.</p-->
+        </div>
+       <div>
+
+       <div class="section">
+        <h4>Syllabus</h4>
+
+        <table class="table">
+          <tr>
+            <td>Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td>Topic</td><td>&nbsp;</td>
+          </tr>
+
+          <tr>
+            <td style="width:200px">Mon, January 14th</td>
+            <td style="width:600px">Introduction to Computer Vision [<a href="http://www.cs.virginia.edu/~vicente/vision/slides/lecture01.pptx">pptx</a>] [<a href="http://www.cs.virginia.edu/~vicente/vision/slides/lecture01.pdf">pdf</a>]
+            </td>
+            <td>&nbsp;</td>
+          </tr>
+
+           <tr class="assignment"><td class="text-center" colspan="4">Assignment on Image Processing and Manipulation [<a href="#">Google Colaboratory</a>]. Due <strong>January 23rd 5pm EST</strong>.</td></tr>
+
+          <tr>
+            <td>Wed, January 16th</td>
+            <td>
+            	Image Processing and Image Manipulation: Convolutions.
+            </td>
+            <td></td>
+          </tr>
+
+          <tr class="noclass">
+            <td>Mon, January 21st</td>
+            <td> MLK Holiday -- no class this day 
+            </td><td>&nbsp;</td>
+          </tr>
+
+           <!--tr class="assignment"><td class="text-center" colspan="4">Assignment on FashionMNIST Classification [<a href="#">Google Colaboratory</a>]. Due <strong>TBD</strong>.</td></tr-->
+          
+          <tr>
+            <td>Wed, January 23rd</td>
+            <td>Image Features: Edges, Corners, SIFT, HoG</td>
+            <td>&nbsp;<td>
+          </tr>
+
+          <tr class="assignment"><td class="text-center" colspan="4">Assignment on Image Classification. Due <strong>February 4th 5pm EST</strong>.</td></tr>
+
+          <tr>
+          <td>Mon, January 28th </td>
+              <td>Machine Learning for Vision I: Introduction
+              </td>
+              <td>&nbsp;</td>
+          </tr>
+
+          <tr>
+            <td>Wed, January 30th</td>
+             <td>Machine Learning for Vision II: Softmax Classifier
+            </td>
+            <td>&nbsp;</td>
+          </tr>
+
+           <tr>
+            <td>Mon, February 4th</td>
+            <td>Machine Learning for Vision III: Stochastic Gradient Descent, Regularization
+            </td>
+            <td>&nbsp;</td>
+          </tr>
+
+          <tr class="assignment"><td class="text-center" colspan="4">Assignment on Deep Learning. Due <strong>February 13th 5pm EST</strong>.</td></tr>
+
+          <tr>
+            <td>Wed, February 6th</td>
+            <td>Machine Learning for Vision IV: Support Vector Machines</td>
+            <td>&nbsp;</td>
+            
+          
+
+           <tr>
+            <td>Mon, February 11th</td>
+            <td>Neural Networks: Multi-layer Perceptron (MLP)</td>
+            <td>&nbsp;</td>
+            
+          </tr>
+
+          <tr>
+            <td>Wed, February 13th</td>
+            <td>Convolutional Neural Networks (CNNs)
+            </td>
+            <td>&nbsp;</td>
+           
+          </tr>
+
+           <tr class="assignment"><td class="text-center" colspan="4">Assignment on Convolutional Neural Networks. Due <strong>February 20th 5pm EST</strong>.</td></tr>
+
+          <tr>
+            <td>Mon, February 18th</td>
+              <td>CNN Architectures I: LeNet, AlexNet, VGG
+            </td><td>&nbsp;</td>
+          </tr>
+
+           <tr>
+            <td>Wed, February 20th</td>
+            <td>CNN Architectures II: GoogLeNet, ResNet, DenseNet
+            </td>
+            <td>&nbsp;</td>
+          </tr>
+
+           <tr>
+            <td>Mon, February 25th</td>
+            <td>Object Detection I: RCNN, Fast-RCNN, Faster-RCNN
+            </td> 
+            <td class="lecturex">&nbsp;</td>
+          </tr>
+
+           <tr>
+            <td>Wed, February 27th</td>
+            <td>Object Detection II: YOLO, SSD
+            <td></td>
+          </tr>
+ 
+           <tr>
+            <td>Mon, March 4th</td>
+            <td> Guest Lecture by <a href="http://users.umiacs.umd.edu/~najibi/">Mahyar Najibi</a>. <br/>
+            SNIPER: Efficient Multi-Scale Training. <b>NeurIPS 2018</b>. [<a href="http://users.umiacs.umd.edu/~najibi/files/sniper.pdf">pdf</a>].
+            </td>
+            <td></td>
+            
+          </tr>
+
+          <!--tr class="assignment"><td class="text-center" colspan="4">Assignment on Stereo Vision, 3D Reconstruction [<a href="https://colab.research.google.com/drive/1JdD1qDEh_ekbTApjANTTgcRpUXD6QVtE">Google Colaboratory</a>]. Due <strong>March 25th 5pm EST</strong>.</td></tr-->
+
+           <tr>
+            <td>Wed, March 6th</td>
+            <td>Image Segmentation: Fully-Convolutional Networks, DeepLab, Mask-RCNN. 
+            </td>
+            <td> &nbsp; </td>
+            
+          </tr>
+
+          <tr class="noclass">
+            <td>Mon, March 11th</td>
+            <td>Spring recess -- no class this day
+            </td>
+            <td>&nbsp;</td>
+          </tr>
+
+          <!--tr class="assignment"><td class="text-center" colspan="4">Assignment on Machine Learning [<a href="#">Google Colaboratory</a>]. Due April 1st 5pm EST.</td></tr-->
+          <tr class="noclass">
+            <td>Wed, March 13th</td>
+            <td>Spring recess -- no class this day
+            </td>
+            <td>&nbsp;</td>
+            
+          </tr>
+         
+            <tr>
+            <td>Mon, March 18th</td>
+            <td>Image Synthesis: Generative Adversarial Networks (GANs)
+            </td>
+            <td>&nbsp;</td>
+          </tr>
+          
+          
+
+          <tr>
+            <td>Wed, March 20th</td>
+              <td>Image Captioning: Recurrent Neural Networks (RNNs) </td>
+             <td class="lecturex">
+            </td>
+          </tr>
+
+           <tr>
+             <td>Mon, March 25th</td>
+             <td>Deep Reinforcement Learning: Policy Gradients.
+            </td>
+            <td></td> 
+          </tr>
+
+          <!--tr class="assignment"><td class="text-center" colspan="4">Assignment on K-Nearest-Neighbors, Softmax Classifier [<a href="https://colab.research.google.com/drive/1kquGBB_uT3mAgRHgS_-CyIaxZlblTBan#scrollTo=aad1MJs40qq9">Google Colaboratory</a>]. Due <strong>April 15th 5pm EST</strong>.</td></tr-->
+
+          <!--tr class="assignment"><td class="text-center" colspan="4">Assignment on Convolutional Networks and Recognition [<a href="#">Google Colaboratory</a>]. Due April 22nd 5pm EST.</td></tr-->
+
+          <tr>
+            <td>Wed, March 27th</td>
+            <td> Guest Lecture by <a href="http://www.cs.virginia.edu/~tw8cb/">Tianlu Wang</a>:<br/> Adversarial Removal of Gender from Deep Image Representations. <a href="https://arxiv.org/abs/1811.08489">https://arxiv.org/abs/1811.08489</a>.
+            </td>
+            <td>&nbsp;</td>
+            
+          </tr>
+          
+          <tr>
+            <td>Mon, April 1st</td>
+            <td>Guest Lecture by <a href="http://www.cs.virginia.edu/~ft3ex/">Fuwen Tan</a>:<br/> Text2Scene: Generating Abstract Scenes from Textual Descriptions. <a href="https://arxiv.org/abs/1809.01110">https://arxiv.org/abs/1809.01110</a>.
+            </td>
+            <td>&nbsp;</td>
+          </tr>
+
+          <tr>
+            <td>Wed, April 3rd</td>
+            <td> Lecture TBD.
+            </td>
+            <td>&nbsp;</td>
+          </tr>
+
+          <tr>
+            <td>Mon, April 8th</td>
+            <td> Lecture TBD.
+            </td>
+            <td>&nbsp;</td>
+          </tr>
+           
+          <!--tr class="assignment"><td class="text-center" colspan="4">Assignment on Deep Learning, Convolutional Neural Networks, Visual Recognition [<a href="https://colab.research.google.com/drive/1EIeEpECXCvxQn6Z7ALaZT81VJqpQ2-31">Google Colaboratory</a>]. Due <strong>April 29th 5pm EST</strong>.</td></tr-->
+
+          <tr>
+            <td>Wed, April 10th</td>
+            <td> Lecture TBD.
+            </td>
+            <td>&nbsp;</td>
+          </tr>
+
+          <tr>
+            <td>Mon, April 15th</td>
+            <td> Lecture TBD.
+            </td>
+            <td>&nbsp;</td>
+          </tr>
+
+          <tr>
+            <td>Wed, April 17th</td>
+            <td> Lecture TBD.
+            </td>
+            <td>&nbsp;</td>
+          </tr>
+
+           <tr>
+            <td>Mon, April 22nd</td>
+            <td>
+                 Lecture TBD.
+            </td>
+            <td>&nbsp;</td>
+          </tr>
+
+          <tr>
+            <td>Wed, April 24th</td>
+            <td> Lecture TBD.
+            </td>
+            <td>&nbsp;</td>
+          </tr>
+
+          <tr>
+            <td>Mon, April 29th</td>
+            <td> Lecture TBD.
+            </td>
+            <td>&nbsp;</td>
+          </tr>
+
+        </table>
+       </div>
+
+  <div class="section">
+
+  	<p>
+		<strong>Disclaimer: </strong>
+		The professor reserves to right to make changes to the syllabus, including project due dates and test dates. These changes will be announced as early as possible.
+	</p>
+
+    <p>
+        <strong>Prerrequisites: </strong>This course requires no previous background in computer vision or machine learning but knowledge in either of those will be helpful.
+        You need to know about matrices, calculating derivatives, and probabilities (bayes rule). You will also need to be at least a moderately proficient programmer in python. There will be several lab assignments. These assignments will show you the basics of modern general visual
+        recognition algorithms and models, and will give you the tools for implementing more advanced ones.  Finally, we will have a class project where you will be
+        able to work on something beyond your assignments and where you will have more freedom to pursue a focused problem that is of your interest and better matches
+        your background. Finally we will be using python/pytorch in the lecture notes, so being proficient in Python by completing a few projects in this language before the class starts is helpful. You should install python, jupyter, and pytorch, and complete the following notebook before our first day of class [<a href="notebooks/python_pytorch_plotting.html">pytorch_tensors</a>].
+   </p>
+
+    <p>
+        <strong>Grading: </strong> Assignments: 50% (5 programming assignments: 10% + 10% + 10% + 10% + 10%), Class Project: 40%, Midterm Quiz: 10%.
+    </p>
+    <p>
+        <strong>Late Submission Policy: </strong> You will lose 10% for each day late for the programming projects. This means the first 24 hours after the due date count as 1 day, up to 48 hours is two and 72 for the third late day. However, you will have three late days for the whole course to address any unexpected traveling, other commitments, interviews, hackathons, etc. These three late day grace period will be accounted at the end of the semester. Please do not send the professor or the TAs emails about submitting late assignments, you do not need to explain the reason for submitting a late assignment, please just submit the late assignment. You can always submit late assignments, and you have a grace period of 3 days for the semester. If you don't use more than three late days, you will not be penalized in any way (but this will be accounted at the end of the semester). Note: the 3-day grace period doesn't apply to the course project, and it doesn't count fractions of a day, only full days (if it shows late on Collab, it is late, and any fraction of a day counts as a full day). Note: Assignments on Collab will not accept submissions indefinitely, I can only guarantee that they will accept submissions during the next three days following the deadline. In summary, if this late policy is confusing, please just don't submit late assignments, this is a large class and any emails regarding this matter are not productive use of time for the staff. 
+    </p>
+  <p>
+  <strong>Academic Integrity Statement: </strong> 
+  "The School of Engineering and Applied Science relies upon and cherishes its community of trust. We firmly endorse, uphold, and embrace the University’s Honor principle that students will not lie, cheat, or steal, nor shall they tolerate those who do. We recognize that even one honor infraction can destroy an exemplary reputation that has taken years to build. Acting in a manner consistent with the principles of honor will benefit every member of the community both while enrolled in the Engineering School and in the future. Students are expected to be familiar with the <a href="http://honor.virginia.edu/academic-fraud">university honor code</a>, including the section on academic fraud."</p>
+
+
+  <p>
+  <strong>Accessibility Statement: </strong> 
+  "The University of Virginia strives to provide accessibility to all students. If you require an accommodation to fully access this course, please contact the Student Disability Access Center (SDAC) at (434) 243-5180 or sdac@virginia.edu. If you are unsure if you require an accommodation, or to learn more about their services, you may contact the SDAC at the number above or by visiting their website at <a href="https://www.studenthealth.virginia.edu/student-disability-access-center/about-sdac">https://www.studenthealth.virginia.edu/student-disability-access-center/about-sdac</a>."
+  </p>
+
+  </div>
+
+
+
+  <div class="section">
+        <h4>Other similar courses or courses with useful related material:</h4>
+        <ul>
+          <li><a href="https://computing.ece.vt.edu/~f15ece6504/">Deep Learning for Perception</a> (Dhruv Batra, Virginia Tech)</li>
+          <li><a href="https://sites.google.com/a/ucdavis.edu/ecs-289-visual-recognition/">Visual Recognition</a> (Yong Jae Lee, UC Davis)</li>
+          <li><a href="http://cs.brown.edu/courses/cs143/">Introduction to Computer Vision</a> (James Hays, Brown University / Georgia Tech)</li>
+          <li><a href="http://cs231n.stanford.edu/">Convolutional Neural Networks for Visual Recognition</a> (Fei-fei Li, Andrej Karpathy and Justin Johnson, Stanford University)</li>
+          <li><a href="https://www.cs.ox.ac.uk/people/nando.defreitas/machinelearning/">Machine Learning</a> (Nando de Freitas, University of Oxford)</li>
+          <li><a href="http://people.cs.pitt.edu/~kovashka/cs3710_sp15/">Visual Recognition</a> (Adriana Kovashka, University of Pittsburgh)</li>
+          <li><a href="https://www.cs.ubc.ca/~lsigal/teaching17.html">Multimodal Learning with Vision, Language and Sound</a> (Leonid Sigal, University of British Columbia)</li>
+          <li><a href="http://www.tamaraberg.com/teaching/Spring_16/">Recognizing People, Objects and Actions</a> (Tamara L. Berg, UNC Chapel Hill)</li>
+          
+        </ul>
+  </div>
+      <footer class="footer">
+        <p>Department of Computer Science, University of Virginia, Spring 2019. </p>
+      </footer>
+
+    </div> <!-- /container -->
+
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=11605803; 
+var sc_invisible=1; 
+var sc_security="8df3057b"; 
+var sc_https=1; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="http://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="//c.statcounter.com/11605803/0/8df3057b/1/" alt="Web
+Analytics"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+  </body>
+</html>
