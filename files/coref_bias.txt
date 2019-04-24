@@ -1,6 +1,6 @@
 @inproceedings{ZWYOC18,
-author = {Jieyu Zhao, Tianlu Wang, Mark Yatskar, Vicente Ordonez, Kai-Wei Chang},
-title = {Gender Bias in Coreference Resolution:Evaluation and Debiasing Methods}, 
-booktitle = {NAACL}, 
+author = {Jieyu Zhao and Tianlu Wang and Mark Yatskar and Vicente Ordonez and Kai-Wei Chang},
+title = {Gender Bias in Coreference Resolution: Evaluation and Debiasing Methods}, 
+booktitle = {North American Chapter of the Association for Computational Linguistics (NAACL)}, 
 year = {2018},
 }

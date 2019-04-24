@@ -1,0 +1,6 @@
+@inproceedings{genderbiaselmo,
+author = {Tianlu Wang and Jieyu Zhao and Mark Yatskar and Ryan Cotterell and Vicente Ordonez and Kai-Wei Chang},
+title = {Gender Bias in Contextualized Word Embeddings}, 
+booktitle = {North American Chapter of the Association for Computational Linguistics (NAACL)}, 
+year = {2019},
+}
