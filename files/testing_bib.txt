@@ -1,0 +1,16 @@
+@article{DBLP:journals/corr/abs-1905-07831,
+  author    = {Yuchi Tian and
+               Ziyuan Zhong and
+               Vicente Ordonez and
+               Baishakhi Ray},
+  title     = {Testing Deep Neural Network based Image Classifiers},
+  journal   = {CoRR},
+  volume    = {abs/1905.07831},
+  year      = {2019},
+  url       = {http://arxiv.org/abs/1905.07831},
+  archivePrefix = {arXiv},
+  eprint    = {1905.07831},
+  timestamp = {Tue, 28 May 2019 12:48:08 +0200},
+  biburl    = {https://dblp.org/rec/bib/journals/corr/abs-1905-07831},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
