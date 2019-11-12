@@ -1,0 +1,8 @@
+@InProceedings{fuwen2019neurips,
+author={Fuwen Tan and Paola Cascante-Bonilla and Xiaoxiao Guo and Hui Wu and Song Feng and Vicente Ordonez},
+title={Drill-down: Interactive Retrieval of Complex Scenes using Natural Language Queries},
+booktitle = {Neural Information Processing Systems (NeurIPS)},
+month = {December},
+year = {2019}
+}
+
