@@ -1,0 +1,8 @@
+@misc{cascantebonilla2020curriculum,
+    title={Curriculum Labeling: Self-paced Pseudo-Labeling for Semi-Supervised Learning},
+    author={Paola Cascante-Bonilla and Fuwen Tan and Yanjun Qi and Vicente Ordonez},
+    year={2020},
+    eprint={2001.06001},
+    archivePrefix={arXiv},
+    primaryClass={cs.LG}
+}
