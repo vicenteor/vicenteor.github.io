@@ -1,0 +1,8 @@
+@misc{cascantebonilla2019moviescope,
+    title={Moviescope: Large-scale Analysis of Movies using Multiple Modalities},
+    author={Paola Cascante-Bonilla and Kalpathy Sitaraman and Mengjia Luo and Vicente Ordonez},
+    year={2019},
+    eprint={1908.03180},
+    archivePrefix={arXiv},
+    primaryClass={cs.CV}
+}
