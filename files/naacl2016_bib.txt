@@ -1,0 +1,14 @@
+@inproceedings{yatskar-etal-2016-stating,
+    title = "Stating the Obvious: Extracting Visual Common Sense Knowledge",
+    author = "Yatskar, Mark  and
+      Ordonez, Vicente  and
+      Farhadi, Ali",
+    booktitle = "Proceedings of the 2016 Conference of the North {A}merican Chapter of the Association for Computational Linguistics: Human Language Technologies",
+    month = jun,
+    year = "2016",
+    address = "San Diego, California",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/N16-1023",
+    doi = "10.18653/v1/N16-1023",
+    pages = "193--198",
+}
