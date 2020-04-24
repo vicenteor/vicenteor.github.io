@@ -56,6 +56,10 @@ h5{
   color:#000;
 }
 
+.subtext a{
+  font-weight: 400;
+}
+
 li.media{
   margin-bottom:2.5rem;
 }
