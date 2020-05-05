@@ -21,6 +21,53 @@
     font-style: normal;
 }
 
+/* Define styles for header area */
+.vislang-head-text{
+  font-size: 1.6rem;
+  text-align: center;
+}
+.institution-head-text{
+  font-size: 1.5rem;
+  text-align: center
+}
+.institution-head-text a:hover, .vislang-head-text a:hover{
+  text-decoration: none;
+}
+.jumbo-box {
+  background-image: url("../images/uva-background-sm.png");
+  background-size: cover;
+  text-align: center;
+}
+.group-image {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+@media (min-width: 768px) {
+  .group-image{
+    float: left;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+  }
+  .jumbo-box {
+    text-align: left;
+  }
+  .vislang-head-text{
+    display: inline;
+    font-size: 1.5rem;
+  }
+  .institution-head-text{
+    display: inline;
+    font-size: 1.4rem;
+  }
+  .front-text{
+    font-size:1.15rem;
+  }
+  .subtext{
+    font-size:1rem;
+  }
+}
+/* End define styles for header area */
+
 .blank-container{
   background-color: #fff;
   border-left: 1px solid #f3f3f3;
@@ -80,15 +127,6 @@ body {
 
 .alumni span{
   font-weight:bold;
-}
-
-.jumbo-box {
-  background-image: url("../images/uva-background-sm-lighter.png");
-  background-size: cover;
-}
-
-.jumbo-box .subtext{
-  color:#000;
 }
 
 .website-header {
