@@ -20,23 +20,6 @@
 	<!--meta name="msapplication-config" content="bootstrap-4.4.1/site/docs/4.4/assets/img/favicons/browserconfig.xml"-->
 	<meta name="theme-color" content="#563d7c">
 
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
-
     <!-- Custom styles for this template -->
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
     <!-- Custom styles for this template -->
@@ -46,19 +29,41 @@
 
 <div class="container blank-container">
 
-	<header class="website-header py-3 px-2">
-	<div class="row flex-nowrap justify-content-between align-items-center">
-	    <div class="website-header-box col-12 text-left">
-	    	<div class="vislang-head-text">
-	        	<a class="text-dark" href="http://www.vislang.ai"><strong>vis</strong>ion, <strong>lang</strong>uage, and learning lab</a>
-	        </div> 
-	       	<div class="institution-head-text">
-	            <a href="http://www.vislang.ai">
-	            @ <span class="uva-color">the University of Virginia</span>
-	            </a>
-	    	</div>
-	    </div>
-	</div>
+	<header class="website-header">    
+		<div class="d-flex flex-column flex-md-row align-items-center mb-3 border-bottom px-0 px-md-3 py-4">
+		    <div class="website-header-box text-left mr-auto d-none d-lg-block">
+		        <a href="https://www.vislang.ai" class="plain">
+		    	<div class="vislang-head-text">
+		        	<strong>vis</strong>ion, <strong>lang</strong>uage, and learning lab
+		        </div> 
+		       	<div class="institution-head-text">
+		            @ <span class="uva-color">the University of Virginia</span>
+		    	</div>
+		        </a>
+		    </div>
+
+		    <div class="website-header-box text-left mr-auto d-none d-md-block d-lg-none">
+		        <a href="/" class="plain">
+		        <div class="vislang-head-text">
+		            <strong>vislang</strong>
+		        </div> 
+		        <div class="institution-head-text">
+		            @ <span class="uva-color">the University of Virginia</span>
+		        </div>
+		        </a>
+		    </div>
+
+		    <div class="website-header-box text-left d-block d-md-none my-2 pb-1">
+		        <a href="/" class="plain">
+		        <div class="vislang-head-text">
+		            <strong>vislang</strong>
+		        </div> 
+		        <div class="institution-head-text">
+		            @ <span class="uva-color">UVA</span>
+		        </div>
+		        </a>
+		    </div>
+		</div>
 	</header>
 
   	<!--div class="nav-scroller py-1 mb-2">
@@ -76,7 +81,7 @@
 	<div class="container mb-0">
     <div class="row">
 
- 		<div class="border-top px-1 px-md-4 py-3 col-lg-12">
+ 		<div class="px-1 px-md-4 py-3 col-lg-12">
 
 	     	<div class="subtext">
 

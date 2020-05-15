@@ -1,5 +1,18 @@
 /* stylelint-disable selector-list-comma-newline-after */
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
 @font-face {
     font-family: 'OpenSans';
     src: url('../css/OpenSans-Light.ttf') format('truetype');
@@ -10,7 +23,7 @@
 @font-face {
     font-family: 'OpenSans';
     src: url('../css/OpenSans-Regular.ttf') format('truetype');
-    font-weight: 400;
+    font-weight: 400; 
     font-style: normal;
 }
 
@@ -23,12 +36,16 @@
 
 /* Define styles for header area */
 .vislang-head-text{
-  font-size: 1.6rem;
+  font-size: 1.3rem;
+  font-weight: 400;
   text-align: center;
+  display: inline;
 }
 .institution-head-text{
-  font-size: 1.5rem;
-  text-align: center
+  font-size: 1.3rem;
+  text-align: center;
+  font-weight: 400;
+  display: inline;
 }
 .institution-head-text a:hover, .vislang-head-text a:hover{
   text-decoration: none;
@@ -53,11 +70,13 @@
   }
   .vislang-head-text{
     display: inline;
-    font-size: 1.5rem;
+    font-weight: 400;
+    font-size: 1.3rem;
   }
   .institution-head-text{
     display: inline;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
+    font-weight: 400;
   }
   .front-text{
     font-size:1.15rem;
@@ -67,6 +86,11 @@
   }
 }
 /* End define styles for header area */
+
+a.plain {
+  text-decoration: none;
+  color: 000;
+}
 
 .blank-container{
   background-color: #fff;
@@ -136,7 +160,6 @@ body {
 
 .uva-color{
   color: #E57200;
-  font-weight: bold;
 }
 
 .website-header-logo {
