@@ -34,6 +34,10 @@
     font-style: normal;
 }
 
+.text-smallest{
+  font-size:0.8rem;
+}
+
 /* Define styles for header area */
 .vislang-head-text{
   font-size: 1.3rem;
