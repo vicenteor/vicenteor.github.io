@@ -8,6 +8,13 @@
     user-select: none;
 }
 
+.assignment{
+  font-size:0.94em;
+  padding:0px;
+  background-color: #ffe !important;
+  margin:0px;
+}
+
 @media (min-width: 768px) {
     .bd-placeholder-img-lg {
         font-size: 3.5rem;
