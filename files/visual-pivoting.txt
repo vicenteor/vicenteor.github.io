@@ -1,0 +1,6 @@
+@inproceedings{yang2020pivot,
+  title={Using Visual Feature Space as a Pivot Across Languages},
+  author={Ziyan Yang and Leticia Pinto-Alva and Franck Dernoncourt and Vicente Ordonez},
+  booktitle={Findings of EMNLP},
+  year={2020}
+}

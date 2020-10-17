@@ -1,0 +1,8 @@
+@misc{liu2020visualnews,
+      title={VisualNews : Benchmark and Challenges in Entity-aware Image Captioning}, 
+      author={Fuxiao Liu and Yinghan Wang and Tianlu Wang and Vicente Ordonez},
+      year={2020},
+      eprint={2010.03743},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
