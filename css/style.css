@@ -35,6 +35,10 @@
     font-style: normal;
 }
 
+.downgrade-link{
+  color: #1476af;
+}
+
 .font-ninety-em{
   font-size: 0.9em;
 }
@@ -43,7 +47,7 @@
 }
 a {
   text-decoration: none;
-  color: #0078BC
+  color: #1476af
 }
 .text-darkish{
   color: #222;
