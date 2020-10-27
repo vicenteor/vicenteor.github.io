@@ -21,6 +21,11 @@
     }
 }
 
+.noclass{
+  color: #555522;
+  background-color: #fdfff9;
+}
+
 .section h4 {
   color: #616161;
   margin-bottom: 12px;
