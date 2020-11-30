@@ -1,6 +1,11 @@
-@inproceedings{yang2020pivot,
-  title={Using Visual Feature Space as a Pivot Across Languages},
-  author={Ziyan Yang and Leticia Pinto-Alva and Franck Dernoncourt and Vicente Ordonez},
-  booktitle={Findings of EMNLP},
-  year={2020}
+@inproceedings{yang-etal-2020-using,
+  title = {Using Visual Feature Space as a Pivot Across Languages},
+  author = {Yang, Ziyan and Pinto-Alva, Leticia and Dernoncourt, Franck and Ordonez, Vicente},
+  booktitle ={Findings of the Association for Computational Linguistics: EMNLP 2020}
+  month = {nov}
+  year = {2020}
+  address = {Online}
+  publisher = {Association for Computational Linguistics}
+  url = {https://www.aclweb.org/anthology/2020.findings-emnlp.328}
+  pages = {3673--3678}
 }
