@@ -1,0 +1,8 @@
+@misc{lanchantin2020general,
+      title={General Multi-label Image Classification with Transformers}, 
+      author={Jack Lanchantin and Tianlu Wang and Vicente Ordonez and Yanjun Qi},
+      year={2020},
+      eprint={2011.14027},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
