@@ -1,0 +1,8 @@
+@misc{pintoalva2020chair,
+      title={Chair Segments: A Compact Benchmark for the Study of Object Segmentation}, 
+      author={Leticia Pinto-Alva and Ian K. Torres and Rosangel Garcia and Ziyan Yang and Vicente Ordonez},
+      year={2020},
+      eprint={2012.01250},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
