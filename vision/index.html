@@ -1,374 +1,486 @@
-<!DOCTYPE html>
+<!--doctype html-->
 <html lang="en">
-  <head>
-  	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-168892872-2"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
 
-	  gtag('config', 'UA-168892872-2');
-	</script>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!--meta name="viewport" content="width=device-width, initial-scale=1"-->
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="favicon.ico">
+<head>
 
-    <title>Introduction to Computer Vision</title>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-168892872-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-168892872-2');
+  </script>
+	
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Vicente Ordonez, 2020">
+  <title>Introduction to Computer Vision</title>
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="icon" href="../images/vislang-emoji.png" sizes="64x64" type="image/png">
+  <meta name="theme-color" content="#563d7c">
 
-    <!-- Bootstrap core CSS -->
-    <link href="js/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
 
-    <!-- Custom styles for this template -->
-    <link href="css/jumbotron-narrow.css" rel="stylesheet">
-    <style>
-      .assignment{
-        font-size:0.94em;
-        padding:0px;
-        background-color: #ffe;
-        margin:0px;
-        }
-    </style>
-  </head>
+<body>
+<div class="container blank-container pt-3">
 
-  <body>
+	<header class="website-header">
+  </header>
 
-    <div class="container">
-      <div style="float:right;width:32%;margin-top:5px;"><a href="https://infinitecreations.deviantart.com/art/BioMech-Eye-168367549"><img src="comp_vision_teaser_by_kirkh.jpg" width="280"/></a></div>
-      <div class="header clearfix">
-        <!--nav>
-          <ul class="nav nav-pills pull-right">
-            <li role="presentation" class="active"><a href="#">Home</a></li>
-            <li role="presentation"><a href="#">About</a></li>
-            <li role="presentation"><a href="#">Contact</a></li>
-          </ul>
-        </nav-->
-        <h3>CS 4501-008: Introduction to Computer Vision</h3>
-        <h5>Instructor: <a href="http://vicenteordonez.com">Vicente Ord&oacute;&ntilde;ez</a> <span style="font-size:1em">(vicente at virginia.edu)</span></h5>
-        <h5>Class Time: Mondays &amp; Wednesdays between 5:00PM and 6:15PM, at Olsson Hall 120.</h5>
-        <h5>TA: Paola Cascante-Bonilla (pc9za at virginia.edu) -- <span style="font-size:0.9em">Office Hours: Fridays from 2:00pm to 4:00pm (Rice Hall 442)</span> </h5>
-        <h5>TA: Ziyan Yang (zy3cx at virginia.edu) -- <span style="font-size:0.9em">Office Hours: Thursdays from 12:30pm to 2:30pm (Rice Hall 442).</span> </h5>
-        <h5>Instructor's Office Hours: Tuesdays from 4:00pm to 6:00pm, Rice 310. </h5>
-        <h5>Discussion Forum: <a href="https://piazza.com/virginia/fall2019/cs4501001">Piazza</a></h5>
+  <main role="main" class="px-4 pb-5">
+    <div class="header row header-text mb-2">
+      <div class="col-lg-9 text-lg-left text-center">
+
+        <img src="images/uva-logo.png" height="30"> 
+
+        <h3 class="mb-1" style="color:#444;margin-top:10px">
+          CS4501: Introduction to Computer Vision <span style="color:#767676;font-size:0.8em">| Spring 2021</span>
+        </h3>
+        
+        <div>
+          <!--div class="d-sm-inline">
+            <img class="rounded-circle my-2" src="lab_members/vicente.jpg" width="86"/>
+            <img class="rounded-circle my-2" src="lab_members/ziyan-yang.jpg" width="86">
+          </div-->
+          <!--div class="d-inline">
+            <img class="rounded-circle my-2" src="lab_members/paola.jpg" width="86"/>
+            <img class="rounded-circle my-2" src="lab_members/anshuman.jpg" width="86"/>
+          </div-->
+        </div>
+        <div>
+          <span>Instructor: <a href="http://vicenteordonez.com">Vicente Ord&oacute;&ntilde;ez-Rom&aacute;n</a></span>
+          <span class="d-lg-inline d-block mb-lg-0 mb-2">(vicente at virginia.edu), Office Hours: TBD</span>
+        </div>
+        <!--div>
+          <span>Teaching Assistant: <a href="https://www.vislang.ai/people">Ziyan Yang</a></span> 
+          <span class="d-lg-inline d-block mb-lg-0 mb-2">(zy3cx at virginia.edu), Office Hours: Wednesdays between 1pm and 2pm (ET)</span> 
+        </div>
+        <div>
+          <span>Teaching Assistant: <a href="http://paolacascante.com">Paola Cascante-Bonilla</a></span>
+          <span class="d-lg-inline d-block mb-lg-0 mb-2">(pc9za at virginia.edu), Office Hours: Fridays between 4pm and 5pm (ET)</span>
+        </div>
+        <div>
+          <span>Teaching Assistant: <a href="https://sites.google.com/virginia.edu/anshuman/">Anshuman Suri</a></span>
+          <span class="d-lg-inline d-block mb-lg-0 mb-2">(as9rw at virginia.edu), Office Hours: Mondays between 1pm and 2pm (ET)</span>
+        </div-->
+        <div style="font-weight:400">Class Time: Tuesdays &amp; Thursdays between 12:30PM and 1:45PM (ET).</div>
+        <div>Discussion Forum: TBD</div>
+      </div>
+      <div class="col-3 text-right d-lg-block d-none">
+        <a href="https://www.deviantart.com/infinitecreations/art/BioMech-Eye-ALT-168384842">
+          <img src="images/biomech_eye_alt_by_infinitecreations_d2s92kq.jpg" width="180"/>
+        </a>
       </div>
 
-        <!--div class="jumbotron">
-        <h1>Jumbotron heading</h1>
-        <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        <p><a class="btn btn-lg btn-success" href="#" role="button">Sign up today</a></p>
-      </div-->
+    </div>
 
+    <div class="section section-text row mb-2 p-1">
+      <div class="col-12 p-2">
+        <strong>Course Description: </strong>
+          Computer Vision is about empowering computers to visually explore and reason about the world. 
+          In this course we will study how images are represented in a computer, how to manipulate them, 
+          and how to extract information (features) from images for various applications including image matching, 
+          reconstruction, and recognition. We will particulary study basic techniques to recover geometry from images, 
+          camera calibration, automatic image alignment, boundary detection, object recognition, image classification, 
+          and image retrieval/search. We will develop the intuitions, study the foundations, techniques, methods, and 
+          underlying concepts, and learn to use these in practical computer vision systems.
+      </div>
+      <div class="col-12 p-2">
+        <strong>Learning Objectives: </strong> 
+        (a) Develop intuitions between human vision and computer vision, 
+        (b) Understanding the basics of 2D and 3D techniques, 
+        (c) Become familiar with the techniques such as registration, matching, and recognition, and 
+        (d) Obtain practical experience in the implementation of computer vision applications.
+      </div>
+      <div class="col-6 p-2">
+        <strong>Prerrequisites: </strong> 
+        It is recommended that students have a basic command of linear algebra, calculus, and statistics. Students are encouraged to complete this 
+        [<a href="https://colab.research.google.com/drive/1fI8_ga1ZG1vGPpJUwBMdxnPX6ntrUgrh">Primer on Image Processing</a>] and familiarize themselves
+        with Jupyter notebooks or Google Colab. Python programming is also a requirement.
+      </div>
 
-       <div class="section" style="margin-top:-10px">
-        <p><strong>Course Description: </strong>Computer Vision is about empowering computers to visually explore and reason about the world. In this course we will study how images are represented in a computer, how to manipulate them, and how to extract information (features) from images for various applications including image matching, reconstruction, and recognition. We will particulary study basic techniques to recover geometry from images, camera calibration, automatic image alignment, boundary detection, object recognition, image classification, and image retrieval/search. We will develop the intuitions, study the mathematical methods, and learn to use these in practical computer vision systems.
-        </p>
-        <p><strong>Learning Objectives: </strong> (a) Develop intuitions between Human Vision and Computer Vision, (b) Understanding the basics of 2D and 3D Computer Vision, (c) Become familiar with the technical approaches in computer vision such as registration, matching, and recognition, and (d) Obtain practical experience in the implementation of computer vision applications.
-        </p>
-       
-       <p><strong>Textbook:</strong> There is no required textbook, but you're strongly encouraged to read chapters from the following book: <a href="http://szeliski.org/Book/">"Computer Vision: Algorithms and Applications"</a> by Richard Szeliski. This is especially important for the first half of the class. The book is available for free online or available for purchase. Also optional readings from David Forsyth &amp; Jean Ponce's <a href="https://www.amazon.com/Computer-Vision-Modern-Approach-2nd/dp/013608592X">"Computer Vision: A Modern Approach"</a>.</p>
-        </div>
-       <div>
+      <div class="col-6 p-2">
+        <strong>Textbook:</strong> 
+          No required textbook, but students are strongly encouraged to read chapters from: 
+          <a href="http://szeliski.org/Book/">"Computer Vision: Algorithms and Applications"</a> by Richard Szeliski. 
+          The book is available for free online or available for purchase. 
+          Also optional readings from David Forsyth &amp; Jean Ponce's 
+          <a href="https://www.amazon.com/Computer-Vision-Modern-Approach-2nd/dp/013608592X">"Computer Vision: A Modern Approach"</a>.
+      </div>
+    </div>
 
-       <div class="section">
-        <h4>Syllabus</h4>
-
-        <table class="table">
+    <div class="section schedule-text">
+      <h4>Schedule</h4>
+  
+      <table class="table table-striped">
+        <thead>
           <tr>
-            <td>Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td>Topic</td><td>Reading</td>
+            <th scope="col">Date</th>
+            <th scope="col">Topic</th>
+            <th scope="col">&nbsp;</th>
           </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>Tue, Feb 2nd</td>
+          <td>
+            Introduction to Computer Vision
+          </td>
+          <td></td>
+        </tr>
+  
+        <tr>
+          <td>Thu, Feb 4th</td>
+          <td>
+            Cameras and Image Formation
+          </td>
+          <td></td>
+        </tr>
 
-          <tr>
-            <td style="width:200px">Wed, August 28th</td>
-            <td style="width:600px"> Welcome / Introduction to Computer Vision [<a href="http://www.cs.virginia.edu/~vicente/vision/slides/lecture01.pptx">pptx</a>] [<a href="http://www.cs.virginia.edu/~vicente/vision/slides/lecture01.pdf">pdf</a>]
-            </td>
-            <td>Szeliski Ch. 1</td>
-          </tr>
+        <tr>
+          <td>Tue, Feb 9th</td>
+          <td>
+            Projective Geometry and Light  
+          </td>
+          <td></td>
+        </tr>
 
-           <tr class="assignment"><td class="text-center" colspan="4">Assignment on [<a href="https://colab.research.google.com/drive/1mk9alqAxfWDBgfmiwrKd0MZUMJjUlx8h">Image Formation, Image Processing, Image Filtering</a>] (10pts). Due <strong>Sunday September 23th, 7pm</strong>.</td></tr>
-          
+        <tr class="assignment">
+          <td class="text-center" colspan="4">
+            Assignment 1: Image Formation, Image Processing, and Image Filtering.
+          </td>
+        </tr>
 
-          <tr>
-            <td>Mon, September 2nd</td>
-            <td>Cameras and Image Formation [<a href="http://www.cs.virginia.edu/~vicente/vision/slides/lecture02.pptx">pptx</a>] [<a href="http://www.cs.virginia.edu/~vicente/vision/slides/lecture02.pdf">pdf</a>]
-            </td><td>Szeliski Ch. 2.1, Forsyth and Ponce Ch. 1</td>
-          </tr>
+        <tr>
+          <td>Thu, Feb 11th</td>
+          <td>
+            Human Vision and Image Processing 
+          </td>
+          <td></td>
+        </tr>
+  
+        <tr>
+          <td>Tue, Feb 16th</td>
+          <td>
+            Image Filtering and Image Frequencies 
+          </td>
+          <td></td>
+        </tr>
 
-          <tr>
-            <td>Wed, September 4th</td>
-            <td>Projective Geometry and Light [<a href="http://www.cs.virginia.edu/~vicente/vision/slides/lecture03.pptx">pptx</a>] [<a href="http://www.cs.virginia.edu/~vicente/vision/slides/lecture03.pdf">pdf</a>]
-            </td><td>Szeliski Ch 2.2 and Ch 2.3</td>
-          </tr>
-         
-          <tr>
-            <td>Mon, September 9th</td>
-            <td>Human Vision and Image Processing [<a href="http://www.cs.virginia.edu/~vicente/vision/slides/lecture04.pptx">pptx</a>] [<a href="http://www.cs.virginia.edu/~vicente/vision/slides/lecture04.pdf">pdf</a>]</td>
-            <td>Szeliski 3.2<td>
-          </tr>
+        <tr>
+          <td>Thu, Feb 18th</td>
+          <td>
+            Frequencies and Edges 
+          </td>
+          <td></td>
+        </tr>
 
-          <tr>
-          <td>Wed, September 11th </td>
-              <td>Image Filtering and Image Frequencies [<a href="http://www.cs.virginia.edu/~vicente/vision/slides/lecture05.pptx">pptx</a>] [<a href="http://www.cs.virginia.edu/~vicente/vision/slides/lecture05.pdf">pdf</a>]
-              </td><td>
-                Szeliski 3.4, 3.5.2, Gonzalez & Woods (Digital Image Processing), Chapters 3 and 10. </td>
-          </tr>
+        <tr class="assignment">
+          <td class="text-center" colspan="4">
+            Assignment 2: Detecting Corners and Lines, Hough Transform.
+          </td>
+        </tr>
+  
+        <tr>
+          <td>Tue, Feb 23th</td>
+          <td>
+            Interest Points: Corners and Blobs
+          </td>
+          <td></td>
+        </tr>
 
-          <tr>
-            <td>Mon, September 16th</td>
-             <td>Frequencies and Edges [<a href="http://www.cs.virginia.edu/~vicente/vision/slides/lecture06.pptx">pptx</a>] [<a href="http://www.cs.virginia.edu/~vicente/vision/slides/lecture06.pdf">pdf</a>]
-            </td><td>Szeliski 4.2</td>
-          </tr>
+        <tr>
+          <td>Thu, Feb 25th</td>
+          <td>
+            SIFT Feature and Hough Transform 
+          </td>
+          <td></td>
+        </tr>
 
-           <tr>
-            <td>Wed, September 18th <!-- Traveling to Oak Ridge National Lab --></td>
-            <td>Canny Edge Detector - Practical Session (Lecture led by Paola and Ziyan) <!--[<a href="http://www.cs.virginia.edu/~vicente/vision/slides/lecture07.pptx">pptx</a>] [<a href="http://www.cs.virginia.edu/~vicente/vision/slides/lecture07.pdf">pdf</a>]-->
-            </td><td>Szeliski 4.1.1, 4.1.2</td>
-          </tr>
+        <tr>
+          <td>Tue, Mar 2nd</td>
+          <td>
+            Camera Calibration and Dense Stereo
+          </td>
+          <td></td>
+        </tr>
 
-          
-<tr class="assignment"><td class="text-center" colspan="4">Assignment on [<a href="https://colab.research.google.com/drive/1rXQNGwlgmxFAORUnKWDxNN5enjXiYKZg">Detecting Corners and Lines</a>] (10pts). Due <strong>Sunday October 13th, 7pm</strong>.</td></tr>
+        <tr class="assignment">
+          <td class="text-center" colspan="4">
+            Assignment 3: Dense Stereo and Depth Estimation
+          </td>
+        </tr>
 
-          <tr>
-            <td>Mon, September 23rd</td>
-            <td>Interest Points: Corners and Blobs [<a href="http://www.cs.virginia.edu/~vicente/vision/slides/lecture07.pptx">pptx</a>] [<a href="http://www.cs.virginia.edu/~vicente/vision/slides/lecture07.pdf">pdf</a>]
-            </td>
-            <td>Szeliski 4.1.1, Szeliski 4.1.2</td>
-            
-          </tr>
-           <tr>
-            <td>Wed, September 25th</td>
-            <td>SIFT Feature and Hough Transform [<a href="http://www.cs.virginia.edu/~vicente/vision/slides/lecture08.pptx">pptx</a>] [<a href="http://www.cs.virginia.edu/~vicente/vision/slides/lecture08.pdf">pdf</a>]
-            </td><td>
-              Szeliski 4.1.2
-            </td>
-            
-          </tr>
+        <tr>
+          <td>Thu, Mar 4th</td>
+          <td>
+            Epipolar Geometry: The Essential Matrix 
+          </td>
+          <td></td>
+        </tr>
 
-          <tr>
-            <td>Mon, September 30th <!-- Traveling to SAP Berlin --></td>
-            <td>Practice Quiz Online Session<!--[<a href="http://www.cs.virginia.edu/~vicente/vision/slides/lecture10.pptx">pptx</a>] [<a href="http://www.cs.virginia.edu/~vicente/vision/slides/lecture10.pdf">pdf</a>]-->
-            </td><td>Szeliski 6.1 and 2.1</td>
-           
-          </tr>
+        <tr class="noclass">
+          <td>Tue, Mar 9th</td>
+          <td>No Class -- Spring Break Day</td>
+          <td></td>
+        </tr>
 
-          <tr>
-            <td>Wed, October 2nd <!-- Traveling to SAP Berlin --> </td>
-              <td><span style="color:#000099">Quiz #1 (10pts)</span> <!--[<a href="http://www.cs.virginia.edu/~vicente/vision/slides/lecture11.pptx">pptx</a>] [<a href="http://www.cs.virginia.edu/~vicente/vision/slides/lecture11.pdf">pdf</a>]-->
-            </td><td></td>
-          </tr>
-
-           <tr class="noclass">
-            <td>Mon, October 7th</td>
-            <td> No class this day / Reading Days 
-            </td>
-            <td>Szeliski 7
-            </td>
-          </tr>
-
-
-
-           <tr>
-             <td>Wed, October 9th</td>
-             <td>Introduction to Machine Learning / Ethics in ML [<a href="http://www.cs.virginia.edu/~vicente/vision/slides/lecture09.pptx">pptx</a>] [<a href="http://www.cs.virginia.edu/~vicente/vision/slides/lecture09.pdf">pdf</a>]
-            </td>
-            <td></td> 
-          </tr>
-
-   
-           
-          <!--tr class="assignment"><td class="text-center" colspan="4">Assignment on Convolutional Networks and Recognition [<a href="#">Google Colaboratory</a>]. Due April 22nd 5pm EST.</td></tr-->
-
-          <tr>
-            <td>Mon, October 14th </td>
-            <td> Linear Classifiers (Softmax) and Generalization [<a href="http://www.cs.virginia.edu/~vicente/vision/slides/lecture10.pptx">pptx</a>] [<a href="http://www.cs.virginia.edu/~vicente/vision/slides/lecture10.pdf">pdf</a>]
-            </td><td></td>
-            
-          </tr>
-
-                  <tr class="assignment"><td class="text-center" colspan="4">Assignment on [<a href="https://colab.research.google.com/drive/1-P-HEMdJFpeUDcd92mPgI-lrHFG8wWJk">K-Nearest-Neighbors, Softmax Classifier </a>] (10pts). Due <strong>Sunday October 27th, 7pm</strong>.</td></tr>
-          
-          <tr>
-            <td>Wed, October 16th </td>
-            <td>Regression, Generalization, Regularization, Momentum [<a href="http://www.cs.virginia.edu/~vicente/vision/slides/lecture11.pptx">pptx</a>] [<a href="http://www.cs.virginia.edu/~vicente/vision/slides/lecture11.pdf">pdf</a>]
-            </td><td></td>
-          </tr>
-
-          <tr>
-            <td>Mon, October 21st <!-- Traveling to EMNLP Hong Kong --></td>
-            <td>Neural Networks and Backpropagation [<a href="http://www.cs.virginia.edu/~vicente/vision/slides/lecture12.pptx">pptx</a>] [<a href="http://www.cs.virginia.edu/~vicente/vision/slides/lecture12.pdf">pdf</a>]
-            </td><td></td>
-          </tr>
-           
+        <tr>
+          <td>Thu, Mar 11th</td>
+          <td>
+            Structure from Motion and Multi-view Geometry
+          </td>
+          <td></td>
+        </tr>
 
 
-          <tr>
-            <td>Wed, October 23rd <!-- Traveling to EMNLP Hong Kong --></td>
-            <td>Convolutional (Neural) Networks (CNNs) [<a href="http://www.cs.virginia.edu/~vicente/vision/slides/lecture13.pptx">pptx</a>] [<a href="http://www.cs.virginia.edu/~vicente/vision/slides/lecture13.pdf">pdf</a>]
-            </td><td></td>
-          </tr>
+        <tr class="assignment">
+          <td class="text-center" colspan="4">
+            Assignment 3: Dense Stereo and Depth Estimation
+          </td>
+        </tr>
 
-          <tr>
-            <td>Mon, October 28th</td>
-            <td>Deeper Neural Network Architectures (videoconference lecture / recorded) [<a href="http://www.cs.virginia.edu/~vicente/vision/slides/lecture14.pptx">pptx</a>] [<a href="http://www.cs.virginia.edu/~vicente/vision/slides/lecture14.pdf">pdf</a>]
-            </td> <td class="lecturex">
-              <!--Project 5 Due: Deep Scene Classification.-->
-            </td>
-          </tr>
+        <tr>
+          <td>Tue, Mar 16th</td>
+          <td>
+             <strong>Midterm Exam</strong>
+          </td> 
+          <td></td>
+        </tr>
 
-         
+        <tr>
+          <td>Thu, Mar 18th</td>
+          <td>
+            Introduction to Machine Learning
+          </td>
+          <td></td>
+        </tr>
 
-          <tr>
-            <td>Wed, October 30th</td>
-            <td>  Deep Learning for Object Detection: Methods and Overview (Led by Paola) [<a href="http://www.cs.virginia.edu/~vicente/vision/slides/lecture-paola-object-detection.pptx">pptx</a>] [<a href="http://www.cs.virginia.edu/~vicente/vision/slides/lecture-paola-object-detection.pdf">pdf</a>]
-            </td><td></td>
-          </tr>
+        <tr>
+          <td>Tue, Mar 23th</td>
+          <td>
+            Linear Classifiers (Softmax) and Stochastic Gradient Descent
+          </td>
+          <td></td>
+        </tr>
 
-           <tr class="assignment"><td class="text-center" colspan="4">Assignment on [<a href="https://colab.research.google.com/drive/1E3T8Dug9D_5hkH0lx6mfqgNRKq_vQqSr">Deep Learning, Convolutional Neural Networks, Visual Recognition</a>] (10pts). Due <strong>Tuesday November 19th, 7pm</strong>.</td></tr>
+        <tr class="assignment">
+          <td class="text-center" colspan="4">
+            Assignment 4: Image Classification and Machine Learning
+          </td>
+        </tr>
 
+        <tr>
+          <td>Thu, Mar 25th</td>
+          <td>
+            Stochastic Gradient Descent, Regularization, and Optmization
+          </td>
+          <td></td>
+        </tr>
 
-           <tr>
-            <td>Mon, November 4th</td>
-            <td>
-                 Deep Learning for Image Segmentation: Methods and Overview (Led by Ziyan) [<a href="http://www.cs.virginia.edu/~vicente/vision/slides/lecture-ziyan-segmentation.pptx">pptx</a>] [<a href="http://www.cs.virginia.edu/~vicente/vision/slides/lecture-ziyan-segmentation.pdf">pdf</a>]
-            </td><td></td>
-          </tr>
+        <tr>
+          <td>Tue, Mar 30th</td>
+          <td>
+            Neural Networks and Backpropagation
+          </td>
+          <td></td>
+        </tr>
 
-          <tr>
-            <td>Wed, November 6th</td>
-            <td>Residual Networks and Recap on Object Detection and Semantic Segmentation [<a href="http://www.cs.virginia.edu/~vicente/vision/slides/lecture16.pptx">pptx</a>] [<a href="http://www.cs.virginia.edu/~vicente/vision/slides/lecture16.pdf">pdf</a>]
-            </td><td></td>
-          </tr>
+        <tr>
+          <td>Thu, Apr 1st</td>
+          <td>
+            Convolutional Neural Networks
+          </td>
+          <td></td>
+        </tr>
 
-          <tr>
-            <td>Mon, November 11th</td>
-            <td> <span style="color:#000099">Quiz #2 (10pts) [only machine learning / deep neural networks]</span>  
-            </td>
-            <td>
-            </td>
-          </tr>
+        <tr>
+          <td>Tue, Apr 6th</td>
+          <td>
+            Convolutional Neural Networks for Image Classification
+          </td>
+          <td></td>
+        </tr>
 
-     <tr>
-            <td>Wed, November 13th</td>
-            <td>  Quiz Review and Practical Session on Neural Networks
-            </td> <td class="lecturex">
-              Szeliski 6.2.1 
-            </td>
-          </tr>
+        <tr class="assignment">
+          <td class="text-center" colspan="4">
+            Assignment 5: Image Segmentation and other more advanced topics
+          </td>
+        </tr>
 
+        <tr>
+          <td>Thu, Apr 8th</td>
+          <td>
+            Convolutional Neural Networks for Image Segmentation
+          </td>
+          <td></td>
+        </tr>
 
-           <tr>
-            <td>Mon, November 18th</td>
-            <td>Camera Calibration and Dense Stereo   [<a href="http://www.cs.virginia.edu/~vicente/vision/slides/lecture17.pptx">pptx</a>] [<a href="http://www.cs.virginia.edu/~vicente/vision/slides/lecture17.pdf">pdf</a>] <!--[<a href="http://www.cs.virginia.edu/~vicente/vision/slides/lecture14.pptx">pptx</a>] [<a href="http://www.cs.virginia.edu/~vicente/vision/slides/lecture14.pdf">pdf</a>]-->
-            </td><td> Szeliski 7
-            </td>
-            
-          </tr>
+        <tr>
+          <td>Tue, Apr 13th</td>
+          <td>
+            Convolutional Neural Networks for Object Detection
+          </td>
+          <td></td>
+        </tr>
 
-<tr class="assignment"><td class="text-center" colspan="4">Assignment on [<a href="https://colab.research.google.com/drive/1Oa5XJqJwM2Ke2mmP-izVZtOkO5MIHhEi">Dense Stereo Vision</a>] (10pts). Due <strong>Thursday December 5th, 7pm</strong>.</td></tr>
+        <tr class="noclass">
+          <td>Thu, Apr 15th</td>
+          <td>
+            No Class - Spring Break Day
+          </td>
+          <td></td>
+        </tr>
 
+        <tr>
+          <td>Tue, Apr 20th</td>
+          <td>Generative Adversarial Networks (GANs)</td>
+          <td></td>
+        </tr>
 
-      
-          <!--tr class="assignment"><td class="text-center" colspan="4">Assignment on Machine Learning [<a href="#">Google Colaboratory</a>]. Due April 1st 5pm EST.</td></tr-->
-          <tr>
-            <td>Wed, November 20th</td>
-            <td> Epipolar Geometry: The Essential Matrix [<a href="http://www.cs.virginia.edu/~vicente/vision/slides/lecture18.pptx">pptx</a>] [<a href="http://www.cs.virginia.edu/~vicente/vision/slides/lecture18.pdf">pdf</a>]
-            </td><td>Szeliski 8.4</td>
-            
-          </tr>     
+        <tr>
+          <td>Thu, Apr 22th</td>
+          <td>
+            Optical Flow and Video Recognition
+          </td>
+          <td></td>
+        </tr>
 
-          <tr>
-            <td>Mon, November 25th</td>
-            <td> Generative Adversarial Networks (GANs) [<a href="http://www.cs.virginia.edu/~vicente/vision/slides/lecture19.pptx">pptx</a>] [<a href="http://www.cs.virginia.edu/~vicente/vision/slides/lecture19.pdf">pdf</a>]
-            </td><td></td>
-          </tr>
+        <tr>
+          <td>Tue, Apr 27th</td>
+          <td>
+            Computer Vision Applications Review Session I
+          </td>
+          <td></td>
+        </tr>
 
-          <tr class="noclass">
-            <td>Wed, November 27th</td>
-            <td> Thanksgiving Day
-            </td><td></td>
-          </tr>
+        <tr>
+          <td>Thu, Apr 29th</td>
+          <td>
+            Computer Vision Applications Review Session II
+          </td>
+          <td></td>
+        </tr>
 
-          <tr>
-            <td>Mon, December 2nd</td>
-            <td> Optical Flow and Video Recognition [<a href="http://www.cs.virginia.edu/~vicente/vision/slides/lecture20.pptx">pptx</a>] [<a href="http://www.cs.virginia.edu/~vicente/vision/slides/lecture20.pdf">pdf</a>]
-            </td><td></td>
-          </tr>
+        <tr>
+          <td>Tue, May 4th</td>
+          <td>
+            Computer Vision Applications Review Session III
+          </td>
+          <td></td>
+        </tr>
 
+        <tr>
+          <td>Tue, May 6th</td>
+          <td>
+            Course Recap
+          </td>
+          <td></td>
+        </tr>
 
-          <tr>
-            <td>Wed, December 4th</td>
-            <td>Other Topics and Course Recap [<a href="http://www.cs.virginia.edu/~vicente/vision/slides/lecture21.pptx">pptx</a>] [<a href="http://www.cs.virginia.edu/~vicente/vision/slides/lecture21.pdf">pdf</a>] and <b>Final Project 2-page Report + code/notebook (30pts)</b>
-            </td><td></td>
-          </tr>
+        </tbody>
+      </table>
+    </div>
 
-        </table>
-       </div>
+    <div class="section section-text">
+      <p>
+        <strong>Disclaimer: </strong>
+        The professor reserves to right to make changes to the syllabus, including assignment due dates. These changes will be announced as early as possible.
+      </p>
+      <p>
+        <strong>Grading: </strong> 
+        To be announced officially on first day of class. <!--Assignments: 75pts (15pts + 15pts + 20pts + 20pts + 20pts), Midterm Exam: 10pts, Final Exam: 20pts.
+        Grade cutoffs: A+ (100pts), A (90pts), A- (80pts), B+ (85pts), B (80pts), B- (75pts), C+ (70pts), C (65pts), C- (60pts), D+ (55pts), D (50pts), D- (45pts).-->
+      </p>
+      <p>
+        <strong>Late Submission Policy: </strong> 
+        Generally, no late assignments will be accepted in this class. Unless the student has procured special accommodations for warranted circumstances. 
+        We acknowledge the ongoing pandemic and want to be mindful of any special circumstances associated with it. 
+        We will be accommodating also due to exceptional circumstances but this is a large class so please make sure this is truly warranted and contact us as soon as possible.
+      </p>
+      <p>
+        <strong>Recording of Lectures: </strong>
+        I will be recording every lecture in order to accommodate students who will be learning remotely -- 
+        however there might be small discussions pre and post-lecture which might not be recorded -- if these take place they are not considered essential and they will
+        be communicated through other means (e.g. email or UVA Collab). Because lectures include fellow students, you and they may be personally identifiable on the recordings. 
+        We might set aside some time at the end for questions that will not be recorded -- this will be announced when it takes place.
+        These recordings may only be used for the purpose of individual or group study with other students enrolled in this class during this semester. 
+        You may not distribute them in whole or in part through any other platform or to any persons outside of this class, nor may you make your own recordings 
+        of this class unless written permission has been obtained from the Instructor and all participants in the class have been informed that recording will occur. 
+        If you want additional details on this, please see Provost Policy 008 and follow-up guidelines. 
+        <strong>If you notice that I have failed to activate the recording feature, please remind me!</strong>
+      </p>
+      <p>
+        <strong>Academic Integrity Statement: </strong> 
+        "The School of Engineering and Applied Science relies upon and cherishes its community of trust. 
+        We firmly endorse, uphold, and embrace the University’s Honor principle that students will not lie, 
+        cheat, or steal, nor shall they tolerate those who do. We recognize that even one honor infraction can 
+        destroy an exemplary reputation that has taken years to build. Acting in a manner consistent with the principles 
+        of honor will benefit every member of the community both while enrolled in the Engineering School and in the future. 
+        Students are expected to be familiar with the <a href="http://honor.virginia.edu/academic-fraud">university honor code</a>, 
+        including the section on academic fraud." 
+        In summary, if assignments are individual then no two students should submit the same source code -- any overlap in source code of 
+        sufficient similarity will be potentially flagged as failure to abide to the Honor Code. You can discuss, you can share resources, you can talk
+        about the assignment but not share code as this would potentially incur on an honor code violation.
+        Regardless of circumstances I will assume that any source code, text, or images submitted alongside reports or projects are of the authorship
+        of the individual students unless otherwise explicitly stated through appropriate means. Any missing information regarding sources will be regarded potentially
+        as a failure to abide by the academic integrity statement even if that was not the intent. Please be careful clearly stating
+        what is your original work and what is not in all assignments.
+      </p>
+      <p>
+        <strong>Discrimination and power-based violence: </strong> 
+        The University of Virginia is dedicated to providing a safe and equitable learning environment for all students. 
+        To that end, it is vital that you know two values that I and the University hold as critically important: 
+        (1) Power-based personal violence will not be tolerated. (2) Everyone has a responsibility to do their part to maintain a safe community on Grounds.
+        If you or someone you know has been affected by power-based personal violence, 
+        more information can be found on the UVA Sexual Violence website that describes reporting options and resources available - 
+        www.virginia.edu/sexualviolence. As your professor and as a person, know that I care about you and your well-being and stand 
+        ready to provide support and resources as I can. As a faculty member, I am a responsible employee, which means that I am 
+        required by University policy to report what you tell me to the University's administration. 
+        The University has mechanisms in place to ensure that the reporting student receives the resources and support that they need, 
+        while also reviewing the information presented to determine whether further action is necessary to ensure survivor safety 
+        and the safety of the University community. If you wish to report something that you have seen, you can do so at the Just 
+        Report It portal (http://justreportit.virginia.edu/). The worst possible situation would be for you or your friend to remain 
+        silent when there are so many here willing and able to help.
+      </p>
 
-<div>
-<p>
-<b>Disclaimer: </b>
-The professor reserves to right to make changes to the syllabus, including project due dates and test dates. These changes will be announced as early as possible.</p>
+      <p>
+        <strong>Anti-racism commitment: </strong> 
+        I acknowledge that racism and white supremacy are baked into the history of UVA as an institution. 
+        I believe that my pedagogical philosophies and practices can either 
+        reinforce inequities or work to eliminate them. I am committed and actively working to be a better, 
+        more careful listener; continuing to learn about the ways systemic injustices disadvantage Black students and 
+        colleagues and other students and colleagues of color in and out of the classroom; and advocating for and implementing 
+        anti-racist educational practices. I will hold myself accountable, encourage you to help me do so, and invite you to join me in this work.
+      </p>
+      <p>
+        <strong>Accessibility Statement: </strong> 
+        "The University of Virginia strives to provide accessibility to all students. 
+        If you require an accommodation to fully access this course, please contact the Student Disability Access Center (SDAC) 
+        at (434) 243-5180 or sdac@virginia.edu. If you are unsure if you require an accommodation, or to learn more about their services, 
+        you may contact the SDAC at the number above or by visiting their website at 
+        <a href="https://www.studenthealth.virginia.edu/student-disability-access-center/about-sdac">https://www.studenthealth.virginia.edu/student-disability-access-center/about-sdac</a>."
+        If you need any specific accommodations in the format of the lectures, videos, etc, please communicate it to the instructor as soon as possible.
+      </p>
+    </div>
+
+  </main>
 </div>
 
-  <div class="section">
-   <p>
-        <strong>Prerrequisites: </strong>This course requires no specific previous background.
-        You need to know about matrices, calculating derivatives, and probabilities (bayes rule). You will also need to be at least a moderately proficient programmer in python. There will be several small project assignments. These projects will show you the basics of modern computer vision algorithms, and will give you the tools for implementing more advanced ones. There will also be two quizzes. Being proficient in Python by completing a few projects in this language before the class starts is helpful. You should install python and jupyter.
-        </p>
-        <p>
-        <strong>Grading: </strong> <ul><li>Assignments: 50% (5 assignments: 10% + 10% + 10% + 10% + 10%)</li><li>Quizzes: 20% (2 written quizzes: 10% + 10%)</li><li>Final Project: 30% (2-page report + code + any optional supplementary material to showcase your work)</li></ul>
-    
-    <p>
-        <strong>Late Submission Policy:</strong> You will lose 10% for each day late for the programming projects. This means anytime within the first 24 hours after the due date count as 1 full day, up to 48 hours is two and 72 for the third late day. However, you will have three late days for the whole course to address any unexpected traveling, other commitments, interviews, hackathons, etc. These three late day grace period will be accounted at the end of the semester. Please do not send the professor or the TAs emails about submitting late assignments, you do not need to explain the reason for submitting a late assignment, please just submit the late assignment. If you don't use more than three late days, you will not be penalized in any way (but this will be accounted at the end of the semester so you will not see points deducted until then). Note: the 3-day grace period doesn't apply to the course project, and it doesn't count fractions of a day, only full days (if it shows late on Collab, it is late, and any fraction of a day counts as a full day). Note: Assignments on Collab will not accept submissions indefinitely, I can only guarantee that they will accept submissions during the next three days following the deadline. In summary, if this late policy is confusing, please just don't submit late assignments, this is a large class and any emails regarding this matter are not productive use of time for the staff.
-
-</p>
-        <p>
-  <strong>Academic Integrity</strong>
-  "The School of Engineering and Applied Science relies upon and cherishes its community of trust. We firmly endorse, uphold, and embrace the University’s Honor principle that students will not lie, cheat, or steal, nor shall they tolerate those who do. We recognize that even one honor infraction can destroy an exemplary reputation that has taken years to build. Acting in a manner consistent with the principles of honor will benefit every member of the community both while enrolled in the Engineering School and in the future. Students are expected to be familiar with the <a href="http://honor.virginia.edu/academic-fraud">university honor code</a>, including the section on academic fraud." Note from the instructor: Anything you submit I will by default assume it is something you are claiming credit as your own, and if not, you should state so explicitly. For course projects and assignments, it has to be clear what was done by you and was not. </p>
-
-  <p>
-  <strong>Accessibility Statement: </strong> 
-  "The University of Virginia strives to provide accessibility to all students. If you require an accommodation to fully access this course, please contact the Student Disability Access Center (SDAC) at (434) 243-5180 or sdac@virginia.edu. If you are unsure if you require an accommodation, or to learn more about their services, you may contact the SDAC at the number above or by visiting their website at <a href="https://www.studenthealth.virginia.edu/student-disability-access-center/about-sdac">https://www.studenthealth.virginia.edu/student-disability-access-center/about-sdac</a>."
+<footer class="page-footer">
+  <p>Department of Computer Science @ <a href="http://www.virginia.edu">the University of Virginia</a> ‒ 85 Engineer's Way, Rice Hall, Charlottesville, VA 22904-4740
   </p>
+</footer>
 
-  </div>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Bootstrap JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
 
-  <div class="section">
-        <h4>Other similar courses that might be of interest and from which I borrowed a lot of material:</h4>
-        <ul>
-          <li><a href="http://www3.cs.stonybrook.edu/~cse327/">Introduction to Computer Vision</a> (Dimitris Samaras, Stony Brook University)</li>
-          <li><a href="https://www.cc.gatech.edu/~hays/compvision/">Computer Vision</a> (James Hays, Georgia Institute of Technology)</li>
-          <li><a href="http://slazebni.cs.illinois.edu/spring16/">Computer Vision</a> (Svetlana Lazebnik, University of Illinois at Urbana Champaign)</li>
-          <li><a href="http://vision.stanford.edu/teaching/cs131_fall1718/">Computer Vision: Foundations and Applications</a> (Juan Carlos Niebles and Ranjay Krishna, Stanford University)</li>
-          <li><a href="http://frahm.web.unc.edu/homepage-jan-michael-frahm/sample-page/">Computer Vision</a> (Jan-Michael Frahm, University of North Carolina at Chapel Hill)</li>
-        </ul>
-  </div>
-      <footer class="footer">
-        <p>Department of Computer Science, University of Virginia, Fall 2019. </p>
-      </footer>
-
-    </div> <!-- /container -->
-
-<!-- Start of StatCounter Code for Default Guide -->
-<script type="text/javascript">
-var sc_project=11605803; 
-var sc_invisible=1; 
-var sc_security="8df3057b"; 
-var sc_https=1; 
-var scJsHost = (("https:" == document.location.protocol) ?
-"https://secure." : "http://www.");
-document.write("<sc"+"ript type='text/javascript' src='" +
-scJsHost+
-"statcounter.com/counter/counter.js'></"+"script>");
-</script>
-<noscript><div class="statcounter"><a title="Web Analytics"
-href="http://statcounter.com/" target="_blank"><img
-class="statcounter"
-src="//c.statcounter.com/11605803/0/8df3057b/1/" alt="Web
-Analytics"></a></div></noscript>
-<!-- End of StatCounter Code for Default Guide -->
-  </body>
+</body>
 </html>
